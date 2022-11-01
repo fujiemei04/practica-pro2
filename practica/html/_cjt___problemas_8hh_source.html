@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Práctica de PRO2 (Primavera 2021): Evaluator: Fichero Fuente Cjt_Problemas.hh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Práctica de PRO2 (Primavera 2021): Evaluator
+   &#160;<span id="projectnumber">17/05/2021</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Cjt_Problemas.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_cjt___problemas_8hh.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#ifndef CJT_PROBLEMAS_HH</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#define CJT_PROBLEMAS_HH</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_problema_8hh.html">Problema.hh</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef NO_DIAGRAM</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#ifndef NO_DIAGRAM</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#ifndef NO_DIAGRAM</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_cjt___problemas.html">   27</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_cjt___problemas.html">Cjt_Problemas</a> {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">private</span>: </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;     </div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_cjt___problemas.html#a3b60ae81a5f3e54e2f7a4d4268bf1efe">   32</a></span>&#160;      map&lt;string,Problema&gt; <a class="code" href="class_cjt___problemas.html#a3b60ae81a5f3e54e2f7a4d4268bf1efe">Problemas</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;      </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      <span class="comment">//Constructoras</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      <a class="code" href="class_cjt___problemas.html#a28155f8a26cf7d539b9ca8eba36dd584">Cjt_Problemas</a>(); </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      <span class="comment">//Consultoras</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      <span class="keywordtype">bool</span> <a class="code" href="class_cjt___problemas.html#a5b3f45ca9974f34eb724f887b4b66d20">buscar_problema</a>(<span class="keywordtype">string</span> p) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      <span class="keywordtype">int</span> <a class="code" href="class_cjt___problemas.html#ab25efa417a82edaa46390b2ed615284e">consultar_envios_tot</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; p) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      <span class="keywordtype">int</span> <a class="code" href="class_cjt___problemas.html#acdd867ef119eaefdcca42f669705062f">consultar_envios_corr</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; p) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      <span class="comment">//Modificadoras</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      <span class="keywordtype">int</span> <a class="code" href="class_cjt___problemas.html#a700c0d0cfb4638e1877e62b6a3b85873">nuevo_problema</a>(<span class="keywordtype">string</span> p);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      <span class="keywordtype">void</span> <a class="code" href="class_cjt___problemas.html#a4f468bfddfb6d1d9a82fec7c55d8b2cf">modf_envios_corr</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; p,<span class="keywordtype">int</span> c);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;      <span class="keywordtype">void</span> <a class="code" href="class_cjt___problemas.html#af6bcdd108edae41aac2aac837cd193ea">modf_envios_tot</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; p,<span class="keywordtype">int</span> c);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;       </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      <span class="comment">//Lectura i escritura  </span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      <span class="keywordtype">void</span> <a class="code" href="class_cjt___problemas.html#aca9403e07f153d44d96d5f5c44c0d0f5">leer_cjt_problemas</a>(<span class="keywordtype">int</span> n);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;      </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;      <span class="keywordtype">void</span> <a class="code" href="class_cjt___problemas.html#a14de3f269a5367c03aef37e4d0d1a744">listar_problemas</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;      <span class="keywordtype">void</span> <a class="code" href="class_cjt___problemas.html#ad1c9154b00c59702c0b7c312e3f02baa">escribir_problema</a>(<span class="keywordtype">string</span> p) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;};</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="ttc" id="a_problema_8hh_html"><div class="ttname"><a href="_problema_8hh.html">Problema.hh</a></div><div class="ttdoc">Especificación de la clase Usuario.</div></div>
+<div class="ttc" id="aclass_cjt___problemas_html"><div class="ttname"><a href="class_cjt___problemas.html">Cjt_Problemas</a></div><div class="ttdoc">Representa la información y las operaciones asociadas a un conjuto de problemas.</div><div class="ttdef"><b>Definition:</b> <a href="_cjt___problemas_8hh_source.html#l00027">Cjt_Problemas.hh:27</a></div></div>
+<div class="ttc" id="aclass_cjt___problemas_html_a14de3f269a5367c03aef37e4d0d1a744"><div class="ttname"><a href="class_cjt___problemas.html#a14de3f269a5367c03aef37e4d0d1a744">Cjt_Problemas::listar_problemas</a></div><div class="ttdeci">void listar_problemas() const</div><div class="ttdoc">Se listan los problemas de la coleccion.</div><div class="ttdef"><b>Definition:</b> <a href="_cjt___problemas_8cc_source.html#l00061">Cjt_Problemas.cc:61</a></div></div>
+<div class="ttc" id="aclass_cjt___problemas_html_a28155f8a26cf7d539b9ca8eba36dd584"><div class="ttname"><a href="class_cjt___problemas.html#a28155f8a26cf7d539b9ca8eba36dd584">Cjt_Problemas::Cjt_Problemas</a></div><div class="ttdeci">Cjt_Problemas()</div><div class="ttdoc">Constructora por defecto.</div><div class="ttdef"><b>Definition:</b> <a href="_cjt___problemas_8cc_source.html#l00012">Cjt_Problemas.cc:12</a></div></div>
+<div class="ttc" id="aclass_cjt___problemas_html_a3b60ae81a5f3e54e2f7a4d4268bf1efe"><div class="ttname"><a href="class_cjt___problemas.html#a3b60ae81a5f3e54e2f7a4d4268bf1efe">Cjt_Problemas::Problemas</a></div><div class="ttdeci">map&lt; string, Problema &gt; Problemas</div><div class="ttdoc">Mapa de problemas donde el key es el nombre del problema.</div><div class="ttdef"><b>Definition:</b> <a href="_cjt___problemas_8hh_source.html#l00032">Cjt_Problemas.hh:32</a></div></div>
+<div class="ttc" id="aclass_cjt___problemas_html_a4f468bfddfb6d1d9a82fec7c55d8b2cf"><div class="ttname"><a href="class_cjt___problemas.html#a4f468bfddfb6d1d9a82fec7c55d8b2cf">Cjt_Problemas::modf_envios_corr</a></div><div class="ttdeci">void modf_envios_corr(const string &amp;p, int c)</div><div class="ttdoc">Modifica el numero de envios correctos a un problema.</div><div class="ttdef"><b>Definition:</b> <a href="_cjt___problemas_8cc_source.html#l00040">Cjt_Problemas.cc:40</a></div></div>
+<div class="ttc" id="aclass_cjt___problemas_html_a5b3f45ca9974f34eb724f887b4b66d20"><div class="ttname"><a href="class_cjt___problemas.html#a5b3f45ca9974f34eb724f887b4b66d20">Cjt_Problemas::buscar_problema</a></div><div class="ttdeci">bool buscar_problema(string p) const</div><div class="ttdoc">Busca un problema p.</div><div class="ttdef"><b>Definition:</b> <a href="_cjt___problemas_8cc_source.html#l00015">Cjt_Problemas.cc:15</a></div></div>
+<div class="ttc" id="aclass_cjt___problemas_html_a700c0d0cfb4638e1877e62b6a3b85873"><div class="ttname"><a href="class_cjt___problemas.html#a700c0d0cfb4638e1877e62b6a3b85873">Cjt_Problemas::nuevo_problema</a></div><div class="ttdeci">int nuevo_problema(string p)</div><div class="ttdoc">Añade un nuevo problema.</div><div class="ttdef"><b>Definition:</b> <a href="_cjt___problemas_8cc_source.html#l00030">Cjt_Problemas.cc:30</a></div></div>
+<div class="ttc" id="aclass_cjt___problemas_html_ab25efa417a82edaa46390b2ed615284e"><div class="ttname"><a href="class_cjt___problemas.html#ab25efa417a82edaa46390b2ed615284e">Cjt_Problemas::consultar_envios_tot</a></div><div class="ttdeci">int consultar_envios_tot(const string &amp;p) const</div><div class="ttdoc">Consulta los envios totales del parametro implicito.</div><div class="ttdef"><b>Definition:</b> <a href="_cjt___problemas_8cc_source.html#l00020">Cjt_Problemas.cc:20</a></div></div>
+<div class="ttc" id="aclass_cjt___problemas_html_aca9403e07f153d44d96d5f5c44c0d0f5"><div class="ttname"><a href="class_cjt___problemas.html#aca9403e07f153d44d96d5f5c44c0d0f5">Cjt_Problemas::leer_cjt_problemas</a></div><div class="ttdeci">void leer_cjt_problemas(int n)</div><div class="ttdoc">Lectura de un conjunto de problemas.</div><div class="ttdef"><b>Definition:</b> <a href="_cjt___problemas_8cc_source.html#l00050">Cjt_Problemas.cc:50</a></div></div>
+<div class="ttc" id="aclass_cjt___problemas_html_acdd867ef119eaefdcca42f669705062f"><div class="ttname"><a href="class_cjt___problemas.html#acdd867ef119eaefdcca42f669705062f">Cjt_Problemas::consultar_envios_corr</a></div><div class="ttdeci">int consultar_envios_corr(const string &amp;p) const</div><div class="ttdoc">Consulta los envios correctos del parametro implicito.</div><div class="ttdef"><b>Definition:</b> <a href="_cjt___problemas_8cc_source.html#l00025">Cjt_Problemas.cc:25</a></div></div>
+<div class="ttc" id="aclass_cjt___problemas_html_ad1c9154b00c59702c0b7c312e3f02baa"><div class="ttname"><a href="class_cjt___problemas.html#ad1c9154b00c59702c0b7c312e3f02baa">Cjt_Problemas::escribir_problema</a></div><div class="ttdeci">void escribir_problema(string p) const</div><div class="ttdoc">Se escribe un problema.</div><div class="ttdef"><b>Definition:</b> <a href="_cjt___problemas_8cc_source.html#l00078">Cjt_Problemas.cc:78</a></div></div>
+<div class="ttc" id="aclass_cjt___problemas_html_af6bcdd108edae41aac2aac837cd193ea"><div class="ttname"><a href="class_cjt___problemas.html#af6bcdd108edae41aac2aac837cd193ea">Cjt_Problemas::modf_envios_tot</a></div><div class="ttdeci">void modf_envios_tot(const string &amp;p, int c)</div><div class="ttdoc">Modifica el numero de envios correctos a un problema.</div><div class="ttdef"><b>Definition:</b> <a href="_cjt___problemas_8cc_source.html#l00045">Cjt_Problemas.cc:45</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

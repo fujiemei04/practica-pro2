@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Práctica de PRO2 (Primavera 2021): Evaluator: Fichero Fuente Usuario.cc</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Práctica de PRO2 (Primavera 2021): Evaluator
+   &#160;<span id="projectnumber">17/05/2021</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Usuario.cc</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_usuario_8cc.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_usuario_8hh.html">Usuario.hh</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_usuario.html#aa85a5371a098dfba5449140d9b8a472f">    8</a></span>&#160;<a class="code" href="class_usuario.html#aa85a5371a098dfba5449140d9b8a472f">Usuario::Usuario</a>() {</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <a class="code" href="class_usuario.html#ae36f95f46ba7e3870efd346d8ab32856">resueltos</a> = <a class="code" href="class_usuario.html#a485a741c0646e6414bd6cf669a77fc9c">envios</a> = <a class="code" href="class_usuario.html#acf36f881520ad0e5f152622bf610abe1">curso_inscrito</a> = <a class="code" href="class_usuario.html#ad6b197fe54aa793bd31bacb6afe21d73">envios_problemas</a> = 0;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;}</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_usuario.html#aff74fee597617b3b55eb52eb3eda6f50">   12</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="class_usuario.html#aff74fee597617b3b55eb52eb3eda6f50">Usuario::consultar_envios</a>()<span class="keyword"> const</span>{</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_usuario.html#a485a741c0646e6414bd6cf669a77fc9c">envios</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;}</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_usuario.html#ad585d5b2c160d79f55624229a0e6a714">   16</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="class_usuario.html#ad585d5b2c160d79f55624229a0e6a714">Usuario::consultar_resueltos</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_usuario.html#ae36f95f46ba7e3870efd346d8ab32856">resueltos</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_usuario.html#ad73c52b69c420b7c7ebc6e2c5f3dfe25">   20</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="class_usuario.html#ad73c52b69c420b7c7ebc6e2c5f3dfe25">Usuario::consultar_envios_problemas</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_usuario.html#ad6b197fe54aa793bd31bacb6afe21d73">envios_problemas</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_usuario.html#a40496bbdb70382a9fffff3417f40900e">   24</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="class_usuario.html#a40496bbdb70382a9fffff3417f40900e">Usuario::consultar_curso_inscrito</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_usuario.html#acf36f881520ad0e5f152622bf610abe1">curso_inscrito</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_usuario.html#a93ef173a7809d66b252aed399702b124">   28</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_usuario.html#a93ef173a7809d66b252aed399702b124">Usuario::prob_resolucio</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; s)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  map&lt;string,int&gt;::const_iterator it = <a class="code" href="class_usuario.html#a24e859fe00a327892b3f575adc5af04c">problemas_resueltos</a>.find(s);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keywordflow">if</span> (it != <a class="code" href="class_usuario.html#a24e859fe00a327892b3f575adc5af04c">problemas_resueltos</a>.end()) <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_usuario.html#ac4518e138090f2cf29404aeb0fc7e255">   34</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_usuario.html#ac4518e138090f2cf29404aeb0fc7e255">Usuario::envios_prob_aux</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; p)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    set&lt;string&gt;::const_iterator it = <a class="code" href="class_usuario.html#a59d40de3ab41bec3254dd76b7a3d6c5e">envios_a_prob</a>.find(p);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordflow">if</span> (it != <a class="code" href="class_usuario.html#a59d40de3ab41bec3254dd76b7a3d6c5e">envios_a_prob</a>.end()) <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_usuario.html#ad87d878571c4f4b193c541bf80dc71cc">   40</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="class_usuario.html#ad87d878571c4f4b193c541bf80dc71cc">Usuario::consultar_tam_prob_env</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;   <span class="keywordflow">return</span> <a class="code" href="class_usuario.html#a4be6c77ca4abe39601b1b92e75e60a41">problemas_enviables</a>.size();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_usuario.html#afe7d52d641357e09766245410d9be42b">   44</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_usuario.html#afe7d52d641357e09766245410d9be42b">Usuario::modificar_curso</a>(<span class="keywordtype">int</span> c) {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;   <a class="code" href="class_usuario.html#acf36f881520ad0e5f152622bf610abe1">curso_inscrito</a> = c;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class_usuario.html#a02ea14bd7bdbb6d118aeb631fb8934af">   48</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_usuario.html#a02ea14bd7bdbb6d118aeb631fb8934af">Usuario::modificar_envios</a>(<span class="keywordtype">int</span> c) {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;   <a class="code" href="class_usuario.html#a485a741c0646e6414bd6cf669a77fc9c">envios</a> = c;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_usuario.html#a740a61e57cf775821403066388644c85">   52</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_usuario.html#a740a61e57cf775821403066388644c85">Usuario::modificar_resueltos</a>(<span class="keywordtype">int</span> c) {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;   <a class="code" href="class_usuario.html#ae36f95f46ba7e3870efd346d8ab32856">resueltos</a> = c;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="class_usuario.html#aedffdf3936b99357fe15e767cdb74400">   56</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_usuario.html#aedffdf3936b99357fe15e767cdb74400">Usuario::modificar_envios_problemas</a>(<span class="keywordtype">int</span> c) {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;   <a class="code" href="class_usuario.html#ad6b197fe54aa793bd31bacb6afe21d73">envios_problemas</a> = c;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="class_usuario.html#ab1597a04cf3468132cdaef3380288126">   60</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_usuario.html#ab1597a04cf3468132cdaef3380288126">Usuario::anadir_prob_env</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; s) {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="class_usuario.html#a4be6c77ca4abe39601b1b92e75e60a41">problemas_enviables</a>.insert(make_pair(s,0));</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="class_usuario.html#a5f28f8538d6c2e62867e7ef52f008687">   64</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_usuario.html#a5f28f8538d6c2e62867e7ef52f008687">Usuario::modificar_env_pe</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; s) {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;   map&lt;string,int&gt;::iterator it = <a class="code" href="class_usuario.html#a4be6c77ca4abe39601b1b92e75e60a41">problemas_enviables</a>.find(s);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;   it-&gt;second = it-&gt;second+1;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="class_usuario.html#a3004618c2688cc406b6381bf9db5cbe5">   70</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_usuario.html#a3004618c2688cc406b6381bf9db5cbe5">Usuario::anadir_env_prob_aux</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; p) {</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <a class="code" href="class_usuario.html#a59d40de3ab41bec3254dd76b7a3d6c5e">envios_a_prob</a>.insert(p);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="class_usuario.html#af407a4dad184b6f40f137a626380a446">   74</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_usuario.html#af407a4dad184b6f40f137a626380a446">Usuario::quitar_problema_env</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; p) {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <a class="code" href="class_usuario.html#a4be6c77ca4abe39601b1b92e75e60a41">problemas_enviables</a>.erase(p);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="class_usuario.html#a21b6688314e5c19bbf42e9d124218563">   78</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_usuario.html#a21b6688314e5c19bbf42e9d124218563">Usuario::anadir_pr</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; p) {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  map&lt;string,int&gt;::const_iterator it = <a class="code" href="class_usuario.html#a4be6c77ca4abe39601b1b92e75e60a41">problemas_enviables</a>.find(p);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">int</span> n = it-&gt;second;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <a class="code" href="class_usuario.html#a24e859fe00a327892b3f575adc5af04c">problemas_resueltos</a>.insert(make_pair(p,n));</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="class_usuario.html#a1c2a0ae3735620797e8c1995327151f6">   84</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_usuario.html#a1c2a0ae3735620797e8c1995327151f6">Usuario::escribir_pe</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    map&lt;string,int&gt;::const_iterator it;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordflow">for</span> (it = <a class="code" href="class_usuario.html#a4be6c77ca4abe39601b1b92e75e60a41">problemas_enviables</a>.begin();it != <a class="code" href="class_usuario.html#a4be6c77ca4abe39601b1b92e75e60a41">problemas_enviables</a>.end();++it) {</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        cout &lt;&lt; it-&gt;first &lt;&lt; <span class="stringliteral">&quot;(&quot;</span> &lt;&lt; it-&gt;second &lt;&lt; <span class="stringliteral">&quot;)&quot;</span> &lt;&lt;endl;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    }</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="class_usuario.html#a69a9bea23af22a54d39bcfac78f031eb">   91</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_usuario.html#a69a9bea23af22a54d39bcfac78f031eb">Usuario::escribir_pr</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    map&lt;string,int&gt;::const_iterator it;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordflow">for</span> (it = <a class="code" href="class_usuario.html#a24e859fe00a327892b3f575adc5af04c">problemas_resueltos</a>.begin();it != <a class="code" href="class_usuario.html#a24e859fe00a327892b3f575adc5af04c">problemas_resueltos</a>.end();++it) {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        cout &lt;&lt; it-&gt;first &lt;&lt; <span class="stringliteral">&quot;(&quot;</span> &lt;&lt; it-&gt;second &lt;&lt; <span class="stringliteral">&quot;)&quot;</span> &lt;&lt;endl;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    }</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;}</div>
+<div class="ttc" id="a_usuario_8hh_html"><div class="ttname"><a href="_usuario_8hh.html">Usuario.hh</a></div><div class="ttdoc">Especificación de la clase Usuario.</div></div>
+<div class="ttc" id="aclass_usuario_html_a02ea14bd7bdbb6d118aeb631fb8934af"><div class="ttname"><a href="class_usuario.html#a02ea14bd7bdbb6d118aeb631fb8934af">Usuario::modificar_envios</a></div><div class="ttdeci">void modificar_envios(int c)</div><div class="ttdoc">Modifica los envios hechos por el usuario.</div><div class="ttdef"><b>Definition:</b> <a href="_usuario_8cc_source.html#l00048">Usuario.cc:48</a></div></div>
+<div class="ttc" id="aclass_usuario_html_a1c2a0ae3735620797e8c1995327151f6"><div class="ttname"><a href="class_usuario.html#a1c2a0ae3735620797e8c1995327151f6">Usuario::escribir_pe</a></div><div class="ttdeci">void escribir_pe() const</div><div class="ttdoc">Escritura de los problemas enviables.</div><div class="ttdef"><b>Definition:</b> <a href="_usuario_8cc_source.html#l00084">Usuario.cc:84</a></div></div>
+<div class="ttc" id="aclass_usuario_html_a21b6688314e5c19bbf42e9d124218563"><div class="ttname"><a href="class_usuario.html#a21b6688314e5c19bbf42e9d124218563">Usuario::anadir_pr</a></div><div class="ttdeci">void anadir_pr(const string &amp;p)</div><div class="ttdoc">Añade un problema a los problemas resueltos.</div><div class="ttdef"><b>Definition:</b> <a href="_usuario_8cc_source.html#l00078">Usuario.cc:78</a></div></div>
+<div class="ttc" id="aclass_usuario_html_a24e859fe00a327892b3f575adc5af04c"><div class="ttname"><a href="class_usuario.html#a24e859fe00a327892b3f575adc5af04c">Usuario::problemas_resueltos</a></div><div class="ttdeci">map&lt; string, int &gt; problemas_resueltos</div><div class="ttdoc">Mapa de problemas resueltos ordenados por orden lexicografico, donde el key es el nombre del problema...</div><div class="ttdef"><b>Definition:</b> <a href="_usuario_8hh_source.html#l00042">Usuario.hh:42</a></div></div>
+<div class="ttc" id="aclass_usuario_html_a3004618c2688cc406b6381bf9db5cbe5"><div class="ttname"><a href="class_usuario.html#a3004618c2688cc406b6381bf9db5cbe5">Usuario::anadir_env_prob_aux</a></div><div class="ttdeci">void anadir_env_prob_aux(const string &amp;p)</div><div class="ttdoc">Añade un problema a los problemas que el usuario ha intentado resolver recientemente pero que no ha e...</div><div class="ttdef"><b>Definition:</b> <a href="_usuario_8cc_source.html#l00070">Usuario.cc:70</a></div></div>
+<div class="ttc" id="aclass_usuario_html_a40496bbdb70382a9fffff3417f40900e"><div class="ttname"><a href="class_usuario.html#a40496bbdb70382a9fffff3417f40900e">Usuario::consultar_curso_inscrito</a></div><div class="ttdeci">int consultar_curso_inscrito() const</div><div class="ttdoc">Consulta en que curso esta inscrito.</div><div class="ttdef"><b>Definition:</b> <a href="_usuario_8cc_source.html#l00024">Usuario.cc:24</a></div></div>
+<div class="ttc" id="aclass_usuario_html_a485a741c0646e6414bd6cf669a77fc9c"><div class="ttname"><a href="class_usuario.html#a485a741c0646e6414bd6cf669a77fc9c">Usuario::envios</a></div><div class="ttdeci">int envios</div><div class="ttdoc">Envios realizados por un usuario.</div><div class="ttdef"><b>Definition:</b> <a href="_usuario_8hh_source.html#l00051">Usuario.hh:51</a></div></div>
+<div class="ttc" id="aclass_usuario_html_a4be6c77ca4abe39601b1b92e75e60a41"><div class="ttname"><a href="class_usuario.html#a4be6c77ca4abe39601b1b92e75e60a41">Usuario::problemas_enviables</a></div><div class="ttdeci">map&lt; string, int &gt; problemas_enviables</div><div class="ttdoc">Mapa de problemas enviables ordenados por orden lexicografico, donde el key es el nombre del problema...</div><div class="ttdef"><b>Definition:</b> <a href="_usuario_8hh_source.html#l00036">Usuario.hh:36</a></div></div>
+<div class="ttc" id="aclass_usuario_html_a59d40de3ab41bec3254dd76b7a3d6c5e"><div class="ttname"><a href="class_usuario.html#a59d40de3ab41bec3254dd76b7a3d6c5e">Usuario::envios_a_prob</a></div><div class="ttdeci">set&lt; string &gt; envios_a_prob</div><div class="ttdoc">Set de problemas de los cuales el usuario ya ha hecho almenos un envio.</div><div class="ttdef"><b>Definition:</b> <a href="_usuario_8hh_source.html#l00045">Usuario.hh:45</a></div></div>
+<div class="ttc" id="aclass_usuario_html_a5f28f8538d6c2e62867e7ef52f008687"><div class="ttname"><a href="class_usuario.html#a5f28f8538d6c2e62867e7ef52f008687">Usuario::modificar_env_pe</a></div><div class="ttdeci">void modificar_env_pe(const string &amp;s)</div><div class="ttdoc">Modifica los envios de los problemas enviables.</div><div class="ttdef"><b>Definition:</b> <a href="_usuario_8cc_source.html#l00064">Usuario.cc:64</a></div></div>
+<div class="ttc" id="aclass_usuario_html_a69a9bea23af22a54d39bcfac78f031eb"><div class="ttname"><a href="class_usuario.html#a69a9bea23af22a54d39bcfac78f031eb">Usuario::escribir_pr</a></div><div class="ttdeci">void escribir_pr() const</div><div class="ttdoc">Escritura de los problemas resueltos.</div><div class="ttdef"><b>Definition:</b> <a href="_usuario_8cc_source.html#l00091">Usuario.cc:91</a></div></div>
+<div class="ttc" id="aclass_usuario_html_a740a61e57cf775821403066388644c85"><div class="ttname"><a href="class_usuario.html#a740a61e57cf775821403066388644c85">Usuario::modificar_resueltos</a></div><div class="ttdeci">void modificar_resueltos(int c)</div><div class="ttdoc">Modifica el numero de problemas resueltos por el usuario.</div><div class="ttdef"><b>Definition:</b> <a href="_usuario_8cc_source.html#l00052">Usuario.cc:52</a></div></div>
+<div class="ttc" id="aclass_usuario_html_a93ef173a7809d66b252aed399702b124"><div class="ttname"><a href="class_usuario.html#a93ef173a7809d66b252aed399702b124">Usuario::prob_resolucio</a></div><div class="ttdeci">bool prob_resolucio(const string &amp;s) const</div><div class="ttdoc">Consulta si un problema esta resuelto.</div><div class="ttdef"><b>Definition:</b> <a href="_usuario_8cc_source.html#l00028">Usuario.cc:28</a></div></div>
+<div class="ttc" id="aclass_usuario_html_aa85a5371a098dfba5449140d9b8a472f"><div class="ttname"><a href="class_usuario.html#aa85a5371a098dfba5449140d9b8a472f">Usuario::Usuario</a></div><div class="ttdeci">Usuario()</div><div class="ttdoc">Constructora por defecto.</div><div class="ttdef"><b>Definition:</b> <a href="_usuario_8cc_source.html#l00008">Usuario.cc:8</a></div></div>
+<div class="ttc" id="aclass_usuario_html_ab1597a04cf3468132cdaef3380288126"><div class="ttname"><a href="class_usuario.html#ab1597a04cf3468132cdaef3380288126">Usuario::anadir_prob_env</a></div><div class="ttdeci">void anadir_prob_env(const string &amp;s)</div><div class="ttdoc">Añade un problema a los problemas enviables.</div><div class="ttdef"><b>Definition:</b> <a href="_usuario_8cc_source.html#l00060">Usuario.cc:60</a></div></div>
+<div class="ttc" id="aclass_usuario_html_ac4518e138090f2cf29404aeb0fc7e255"><div class="ttname"><a href="class_usuario.html#ac4518e138090f2cf29404aeb0fc7e255">Usuario::envios_prob_aux</a></div><div class="ttdeci">bool envios_prob_aux(const string &amp;p) const</div><div class="ttdoc">Consulta si un problema ya ha sido intentado anteriormente.</div><div class="ttdef"><b>Definition:</b> <a href="_usuario_8cc_source.html#l00034">Usuario.cc:34</a></div></div>
+<div class="ttc" id="aclass_usuario_html_acf36f881520ad0e5f152622bf610abe1"><div class="ttname"><a href="class_usuario.html#acf36f881520ad0e5f152622bf610abe1">Usuario::curso_inscrito</a></div><div class="ttdeci">int curso_inscrito</div><div class="ttdoc">curso inscrito por un usuario</div><div class="ttdef"><b>Definition:</b> <a href="_usuario_8hh_source.html#l00057">Usuario.hh:57</a></div></div>
+<div class="ttc" id="aclass_usuario_html_ad585d5b2c160d79f55624229a0e6a714"><div class="ttname"><a href="class_usuario.html#ad585d5b2c160d79f55624229a0e6a714">Usuario::consultar_resueltos</a></div><div class="ttdeci">int consultar_resueltos() const</div><div class="ttdoc">Consulta los problemas resueltos.</div><div class="ttdef"><b>Definition:</b> <a href="_usuario_8cc_source.html#l00016">Usuario.cc:16</a></div></div>
+<div class="ttc" id="aclass_usuario_html_ad6b197fe54aa793bd31bacb6afe21d73"><div class="ttname"><a href="class_usuario.html#ad6b197fe54aa793bd31bacb6afe21d73">Usuario::envios_problemas</a></div><div class="ttdeci">int envios_problemas</div><div class="ttdoc">Cuantos problemas ha intentado resolver.</div><div class="ttdef"><b>Definition:</b> <a href="_usuario_8hh_source.html#l00048">Usuario.hh:48</a></div></div>
+<div class="ttc" id="aclass_usuario_html_ad73c52b69c420b7c7ebc6e2c5f3dfe25"><div class="ttname"><a href="class_usuario.html#ad73c52b69c420b7c7ebc6e2c5f3dfe25">Usuario::consultar_envios_problemas</a></div><div class="ttdeci">int consultar_envios_problemas() const</div><div class="ttdoc">Consulta cuantos problemas ha intentado resolver.</div><div class="ttdef"><b>Definition:</b> <a href="_usuario_8cc_source.html#l00020">Usuario.cc:20</a></div></div>
+<div class="ttc" id="aclass_usuario_html_ad87d878571c4f4b193c541bf80dc71cc"><div class="ttname"><a href="class_usuario.html#ad87d878571c4f4b193c541bf80dc71cc">Usuario::consultar_tam_prob_env</a></div><div class="ttdeci">int consultar_tam_prob_env() const</div><div class="ttdoc">Consulta cuantos problemas enviables hay.</div><div class="ttdef"><b>Definition:</b> <a href="_usuario_8cc_source.html#l00040">Usuario.cc:40</a></div></div>
+<div class="ttc" id="aclass_usuario_html_ae36f95f46ba7e3870efd346d8ab32856"><div class="ttname"><a href="class_usuario.html#ae36f95f46ba7e3870efd346d8ab32856">Usuario::resueltos</a></div><div class="ttdeci">int resueltos</div><div class="ttdoc">Envios correctos por un usuario.</div><div class="ttdef"><b>Definition:</b> <a href="_usuario_8hh_source.html#l00054">Usuario.hh:54</a></div></div>
+<div class="ttc" id="aclass_usuario_html_aedffdf3936b99357fe15e767cdb74400"><div class="ttname"><a href="class_usuario.html#aedffdf3936b99357fe15e767cdb74400">Usuario::modificar_envios_problemas</a></div><div class="ttdeci">void modificar_envios_problemas(int c)</div><div class="ttdoc">Modifica el numero de problemas diferentes que el usuario ha itentado resolver.</div><div class="ttdef"><b>Definition:</b> <a href="_usuario_8cc_source.html#l00056">Usuario.cc:56</a></div></div>
+<div class="ttc" id="aclass_usuario_html_af407a4dad184b6f40f137a626380a446"><div class="ttname"><a href="class_usuario.html#af407a4dad184b6f40f137a626380a446">Usuario::quitar_problema_env</a></div><div class="ttdeci">void quitar_problema_env(const string &amp;p)</div><div class="ttdoc">Elimina un problema de los problemas enviables.</div><div class="ttdef"><b>Definition:</b> <a href="_usuario_8cc_source.html#l00074">Usuario.cc:74</a></div></div>
+<div class="ttc" id="aclass_usuario_html_afe7d52d641357e09766245410d9be42b"><div class="ttname"><a href="class_usuario.html#afe7d52d641357e09766245410d9be42b">Usuario::modificar_curso</a></div><div class="ttdeci">void modificar_curso(int c)</div><div class="ttdoc">Modifica el curso inscrito por el usuario.</div><div class="ttdef"><b>Definition:</b> <a href="_usuario_8cc_source.html#l00044">Usuario.cc:44</a></div></div>
+<div class="ttc" id="aclass_usuario_html_aff74fee597617b3b55eb52eb3eda6f50"><div class="ttname"><a href="class_usuario.html#aff74fee597617b3b55eb52eb3eda6f50">Usuario::consultar_envios</a></div><div class="ttdeci">int consultar_envios() const</div><div class="ttdoc">Consulta los envios totales.</div><div class="ttdef"><b>Definition:</b> <a href="_usuario_8cc_source.html#l00012">Usuario.cc:12</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

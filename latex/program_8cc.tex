@@ -1,0 +1,204 @@
+\hypertarget{program_8cc}{}\doxysection{Referencia del Archivo program.\+cc}
+\label{program_8cc}\index{program.cc@{program.cc}}
+
+
+Programa principal.  
+
+
+Dependencia gráfica adjunta para program.\+cc\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=311pt]{program_8cc__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{program_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Programa principal. 
+
+Estamos suponiendo que todos los datos de entrada cumplen el formato decidido en el enunciado de la práctica y, por lo tanto, son válidos, por lo que no se hace ninguna comprobación sobre estos. 
+
+\doxysubsection{Documentación de las funciones}
+\mbox{\Hypertarget{program_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{program_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{program.cc@{program.cc}!main@{main}}
+\index{main@{main}!program.cc@{program.cc}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definición en la línea 27 del archivo program.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{27            \{}
+\DoxyCodeLine{28     \textcolor{keywordtype}{int} P,Q,N,M;}
+\DoxyCodeLine{29     cin >> P;}
+\DoxyCodeLine{30     \mbox{\hyperlink{class_cjt___problemas}{Cjt\_Problemas}} problemas;}
+\DoxyCodeLine{31     problemas.\mbox{\hyperlink{class_cjt___problemas_aca9403e07f153d44d96d5f5c44c0d0f5}{leer\_cjt\_problemas}}(P);}
+\DoxyCodeLine{32     cin >> Q;}
+\DoxyCodeLine{33     \mbox{\hyperlink{class_cjt___sesiones}{Cjt\_Sesiones}} Sesiones;}
+\DoxyCodeLine{34     Sesiones.\mbox{\hyperlink{class_cjt___sesiones_a6b0aad3ef14ed8ae9d7a3e8d3015a566}{leer\_cjt\_sesiones}}(Q);}
+\DoxyCodeLine{35     cin >> N;}
+\DoxyCodeLine{36     \mbox{\hyperlink{class_cjt___cursos}{Cjt\_Cursos}} Cursos;}
+\DoxyCodeLine{37     Cursos.\mbox{\hyperlink{class_cjt___cursos_ae60462653566378534204175c775b341}{leer\_cursos}}(N,Sesiones);}
+\DoxyCodeLine{38     cin >> M;}
+\DoxyCodeLine{39     \mbox{\hyperlink{class_cjt___usuarios}{Cjt\_Usuarios}} Usuarios;}
+\DoxyCodeLine{40     Usuarios.\mbox{\hyperlink{class_cjt___usuarios_a1796f4d44303d1592d191c21a6625e0d}{leer\_cjt\_usuario}}(M);}
+\DoxyCodeLine{41     \textcolor{keywordtype}{string} command;}
+\DoxyCodeLine{42     cin >> command;}
+\DoxyCodeLine{43     \textcolor{keywordflow}{while} (command != \textcolor{stringliteral}{"{}fin"{}}) \{}
+\DoxyCodeLine{44         \textcolor{keywordflow}{if} (command == \textcolor{stringliteral}{"{}nuevo\_problema"{}} or command == \textcolor{stringliteral}{"{}np"{}}) \{}
+\DoxyCodeLine{45             \textcolor{keywordtype}{string} p;}
+\DoxyCodeLine{46             cin >> p;}
+\DoxyCodeLine{47             cout << \textcolor{stringliteral}{"{}\#"{}} << command << \textcolor{stringliteral}{"{} "{}};}
+\DoxyCodeLine{48             cout << p << endl;}
+\DoxyCodeLine{49             \textcolor{keywordtype}{int} c = problemas.\mbox{\hyperlink{class_cjt___problemas_a700c0d0cfb4638e1877e62b6a3b85873}{nuevo\_problema}}(p);}
+\DoxyCodeLine{50             \textcolor{keywordflow}{if} (c == -\/1) cout << \textcolor{stringliteral}{"{}error: el problema ya existe"{}} << endl;}
+\DoxyCodeLine{51             \textcolor{keywordflow}{else} cout << c << endl;}
+\DoxyCodeLine{52         \}}
+\DoxyCodeLine{53         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (command == \textcolor{stringliteral}{"{}nueva\_sesion"{}} or command == \textcolor{stringliteral}{"{}ns"{}}) \{}
+\DoxyCodeLine{54             \textcolor{keywordtype}{string} s;}
+\DoxyCodeLine{55             cin >> s;}
+\DoxyCodeLine{56             \textcolor{keywordtype}{int} c = Sesiones.\mbox{\hyperlink{class_cjt___sesiones_adde256f018e6b091527a21f564b4f0c2}{nueva\_sesion}}(s);}
+\DoxyCodeLine{57             cout << \textcolor{stringliteral}{"{}\#"{}} << command << \textcolor{stringliteral}{"{} "{}};}
+\DoxyCodeLine{58             cout << s << endl; }
+\DoxyCodeLine{59             \textcolor{keywordflow}{if} (c == -\/1) cout << \textcolor{stringliteral}{"{}error: la sesion ya existe"{}} << endl;}
+\DoxyCodeLine{60             \textcolor{keywordflow}{else} cout << c << endl;}
+\DoxyCodeLine{61         \}}
+\DoxyCodeLine{62         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (command == \textcolor{stringliteral}{"{}nuevo\_curso"{}} or command == \textcolor{stringliteral}{"{}nc"{}}) \{}
+\DoxyCodeLine{63             \textcolor{keywordtype}{bool} interseccio;}
+\DoxyCodeLine{64             cout << \textcolor{stringliteral}{"{}\#"{}} << command << endl;}
+\DoxyCodeLine{65             \textcolor{keywordtype}{int} i = Cursos.\mbox{\hyperlink{class_cjt___cursos_a603a7ad7f3223d14cda742eab11b792b}{nuevo\_curso}}(Sesiones,interseccio);}
+\DoxyCodeLine{66             \textcolor{keywordflow}{if} (i == -\/1) cout << \textcolor{stringliteral}{"{}error: curso mal formado"{}} << endl;}
+\DoxyCodeLine{67             \textcolor{keywordflow}{else} cout << i << endl;}
+\DoxyCodeLine{68         \}}
+\DoxyCodeLine{69         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (command == \textcolor{stringliteral}{"{}baja\_usuario"{}} or command == \textcolor{stringliteral}{"{}b"{}}) \{}
+\DoxyCodeLine{70             \textcolor{keywordtype}{string} u;}
+\DoxyCodeLine{71             cin >> u;}
+\DoxyCodeLine{72             cout << \textcolor{stringliteral}{"{}\#"{}} << command << \textcolor{stringliteral}{"{} "{}};}
+\DoxyCodeLine{73             cout << u << endl;}
+\DoxyCodeLine{74             \textcolor{keywordtype}{int} x;}
+\DoxyCodeLine{75             \textcolor{keywordtype}{int} c = Usuarios.\mbox{\hyperlink{class_cjt___usuarios_a4d827a290aa0799286262fcaf309ebde}{baja\_usuario}}(u,x);}
+\DoxyCodeLine{76             \textcolor{keywordflow}{if} (c == -\/1)  cout << \textcolor{stringliteral}{"{}error: el usuario no existe"{}} << endl;}
+\DoxyCodeLine{77             \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{78                 cout << c << endl;}
+\DoxyCodeLine{79                 \textcolor{comment}{//Si el usuario estaba inscrito en algun curso modificamos el numero}}
+\DoxyCodeLine{80                 \textcolor{comment}{//de inscritos de ese curso}}
+\DoxyCodeLine{81                 \textcolor{keywordflow}{if} (x != 0) \{}
+\DoxyCodeLine{82                   \textcolor{keywordtype}{int} n = Cursos.\mbox{\hyperlink{class_cjt___cursos_a7af4902a2931356f512943bd9296c0b6}{consultar\_inscripciones}}(x);}
+\DoxyCodeLine{83                   Cursos.\mbox{\hyperlink{class_cjt___cursos_a6dce7f0fac3737261115aef400f14c06}{modf\_num\_insc}}(x,n-\/1);}
+\DoxyCodeLine{84                 \}}
+\DoxyCodeLine{85             \}}
+\DoxyCodeLine{86         \}}
+\DoxyCodeLine{87         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (command == \textcolor{stringliteral}{"{}alta\_usuario"{}} or command == \textcolor{stringliteral}{"{}a"{}}) \{}
+\DoxyCodeLine{88             \textcolor{keywordtype}{string} u;}
+\DoxyCodeLine{89             cin >> u;}
+\DoxyCodeLine{90             cout << \textcolor{stringliteral}{"{}\#"{}} << command << \textcolor{stringliteral}{"{} "{}};}
+\DoxyCodeLine{91             cout << u << endl;}
+\DoxyCodeLine{92             \textcolor{keywordtype}{int} c = Usuarios.\mbox{\hyperlink{class_cjt___usuarios_aa6c2a7675409f6a76c56f2e8294e415d}{alta\_usuario}}(u);}
+\DoxyCodeLine{93             \textcolor{keywordflow}{if} (c == -\/1) cout << \textcolor{stringliteral}{"{}error: el usuario ya existe"{}} << endl;}
+\DoxyCodeLine{94             \textcolor{keywordflow}{else} cout << c << endl;}
+\DoxyCodeLine{95         \}}
+\DoxyCodeLine{96         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (command == \textcolor{stringliteral}{"{}inscribir\_curso"{}} or command == \textcolor{stringliteral}{"{}i"{}}) \{}
+\DoxyCodeLine{97             \textcolor{keywordtype}{string} u;}
+\DoxyCodeLine{98             cin >> u;}
+\DoxyCodeLine{99             \textcolor{keywordtype}{int} c;}
+\DoxyCodeLine{100             cin >> c;}
+\DoxyCodeLine{101             cout << \textcolor{stringliteral}{"{}\#"{}} << command << \textcolor{stringliteral}{"{} "{}};}
+\DoxyCodeLine{102             cout << u << \textcolor{stringliteral}{"{} "{}} << c << endl;}
+\DoxyCodeLine{103             \textcolor{keywordtype}{int} n = Cursos.\mbox{\hyperlink{class_cjt___cursos_ab9741b234d011b228fe5e8d7f5b57223}{inscribir\_curso}}(c,u,Sesiones,Usuarios);}
+\DoxyCodeLine{104             \textcolor{keywordflow}{if} (n == -\/1) cout << \textcolor{stringliteral}{"{}error: el usuario no existe"{}} << endl;}
+\DoxyCodeLine{105             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (n == -\/2) cout << \textcolor{stringliteral}{"{}error: el curso no existe"{}} << endl;}
+\DoxyCodeLine{106             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (n == -\/3) cout << \textcolor{stringliteral}{"{}error: usuario inscrito en otro curso"{}} << endl;}
+\DoxyCodeLine{107             \textcolor{keywordflow}{else} cout << n << endl;}
+\DoxyCodeLine{108         \}}
+\DoxyCodeLine{109         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (command == \textcolor{stringliteral}{"{}curso\_usuario"{}} or command == \textcolor{stringliteral}{"{}cu"{}}) \{}
+\DoxyCodeLine{110             \textcolor{keywordtype}{string} u;}
+\DoxyCodeLine{111             cin >> u;}
+\DoxyCodeLine{112             cout << \textcolor{stringliteral}{"{}\#"{}} << command << \textcolor{stringliteral}{"{} "{}} << u << endl;}
+\DoxyCodeLine{113             \textcolor{keywordtype}{int} c = Usuarios.\mbox{\hyperlink{class_cjt___usuarios_a738c4a4e36ac7e365253d895e66e3d11}{curso\_usuario}}(u);}
+\DoxyCodeLine{114             \textcolor{keywordflow}{if} (c == -\/1) cout << \textcolor{stringliteral}{"{}error: el usuario no existe"{}} << endl;}
+\DoxyCodeLine{115             \textcolor{keywordflow}{else} cout << c << endl;}
+\DoxyCodeLine{116         \}}
+\DoxyCodeLine{117         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (command == \textcolor{stringliteral}{"{}sesion\_problema"{}} or command == \textcolor{stringliteral}{"{}sp"{}}) \{}
+\DoxyCodeLine{118             \textcolor{keywordtype}{int} c;}
+\DoxyCodeLine{119             cin >> c;}
+\DoxyCodeLine{120             \textcolor{keywordtype}{string} p;}
+\DoxyCodeLine{121             cin >> p;}
+\DoxyCodeLine{122             cout << \textcolor{stringliteral}{"{}\#"{}} << command << \textcolor{stringliteral}{"{} "{}};}
+\DoxyCodeLine{123             cout << c << \textcolor{stringliteral}{"{} "{}} << p << endl;}
+\DoxyCodeLine{124             \textcolor{keywordtype}{string} s;}
+\DoxyCodeLine{125             Cursos.\mbox{\hyperlink{class_cjt___cursos_a4bf95e0ef6830c62bb6471f2bddf83a3}{sesion\_problema}}(c,p,problemas,s);}
+\DoxyCodeLine{126         \}}
+\DoxyCodeLine{127         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (command == \textcolor{stringliteral}{"{}problemas\_resueltos"{}} or command == \textcolor{stringliteral}{"{}pr"{}}) \{}
+\DoxyCodeLine{128             \textcolor{keywordtype}{string} u;}
+\DoxyCodeLine{129             cin >> u;}
+\DoxyCodeLine{130             cout << \textcolor{stringliteral}{"{}\#"{}} << command << \textcolor{stringliteral}{"{} "{}} <<  u <<endl;}
+\DoxyCodeLine{131             Usuarios.\mbox{\hyperlink{class_cjt___usuarios_ae4396f2cf7acb44868bb6fccf9f11256}{imprimir\_problemas\_resueltos}}(u);}
+\DoxyCodeLine{132         \}}
+\DoxyCodeLine{133         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (command == \textcolor{stringliteral}{"{}problemas\_enviables"{}} or command == \textcolor{stringliteral}{"{}pe"{}}) \{}
+\DoxyCodeLine{134             \textcolor{keywordtype}{string} u;}
+\DoxyCodeLine{135             cin >> u;}
+\DoxyCodeLine{136             cout << \textcolor{stringliteral}{"{}\#"{}} << command << \textcolor{stringliteral}{"{} "{}} << u << endl;}
+\DoxyCodeLine{137             Usuarios.\mbox{\hyperlink{class_cjt___usuarios_a5b72d574126657aa62676aeb76402988}{imprimir\_problemas\_enviables}}(u);}
+\DoxyCodeLine{138         \}}
+\DoxyCodeLine{139          \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (command == \textcolor{stringliteral}{"{}envio"{}} or command == \textcolor{stringliteral}{"{}e"{}}) \{}
+\DoxyCodeLine{140             \textcolor{keywordtype}{string} u,p;}
+\DoxyCodeLine{141             cin >> u >> p;}
+\DoxyCodeLine{142             \textcolor{keywordtype}{int} n;}
+\DoxyCodeLine{143             cin >> n;}
+\DoxyCodeLine{144             cout << \textcolor{stringliteral}{"{}\#"{}} << command << \textcolor{stringliteral}{"{} "{}} << u << \textcolor{stringliteral}{"{} "{}} << p << \textcolor{stringliteral}{"{} "{}} << n << endl;}
+\DoxyCodeLine{145             Cursos.\mbox{\hyperlink{class_cjt___cursos_adb4c76fd63fc8211a643bee82039718b}{envio}}(u,p,n,Sesiones,Usuarios,problemas);}
+\DoxyCodeLine{146         \}}
+\DoxyCodeLine{147         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (command == \textcolor{stringliteral}{"{}listar\_problemas"{}} or command == \textcolor{stringliteral}{"{}lp"{}}) \{}
+\DoxyCodeLine{148             cout << \textcolor{stringliteral}{"{}\#"{}} << command << endl;}
+\DoxyCodeLine{149             problemas.\mbox{\hyperlink{class_cjt___problemas_a14de3f269a5367c03aef37e4d0d1a744}{listar\_problemas}}();}
+\DoxyCodeLine{150         \}}
+\DoxyCodeLine{151         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (command == \textcolor{stringliteral}{"{}escribir\_problema"{}} or command == \textcolor{stringliteral}{"{}ep"{}}) \{ }
+\DoxyCodeLine{152             \textcolor{keywordtype}{string} p;}
+\DoxyCodeLine{153             cin >> p;}
+\DoxyCodeLine{154             cout << \textcolor{stringliteral}{"{}\#"{}} << command << \textcolor{stringliteral}{"{} "{}} << p << endl;}
+\DoxyCodeLine{155             problemas.\mbox{\hyperlink{class_cjt___problemas_ad1c9154b00c59702c0b7c312e3f02baa}{escribir\_problema}}(p);}
+\DoxyCodeLine{156         \}}
+\DoxyCodeLine{157         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (command == \textcolor{stringliteral}{"{}listar\_sesiones"{}} or  command == \textcolor{stringliteral}{"{}ls"{}}) \{}
+\DoxyCodeLine{158             cout << \textcolor{stringliteral}{"{}\#"{}} << command << endl;}
+\DoxyCodeLine{159             Sesiones.\mbox{\hyperlink{class_cjt___sesiones_a44ef2578eec4e97a13d8de081228bed9}{listar\_sesiones}}();}
+\DoxyCodeLine{160         \}}
+\DoxyCodeLine{161         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (command == \textcolor{stringliteral}{"{}escribir\_sesion"{}} or command == \textcolor{stringliteral}{"{}es"{}}) \{}
+\DoxyCodeLine{162             \textcolor{keywordtype}{string} s;}
+\DoxyCodeLine{163             cin >> s;}
+\DoxyCodeLine{164             cout << \textcolor{stringliteral}{"{}\#"{}} << command << \textcolor{stringliteral}{"{} "{}} << s << endl;}
+\DoxyCodeLine{165             Sesiones.\mbox{\hyperlink{class_cjt___sesiones_a4f22731fafb1f5f220a701339e9a87f6}{escribir\_sesion}}(s);}
+\DoxyCodeLine{166         \}}
+\DoxyCodeLine{167         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (command == \textcolor{stringliteral}{"{}listar\_cursos"{}} or command == \textcolor{stringliteral}{"{}lc"{}}) \{}
+\DoxyCodeLine{168             cout << \textcolor{stringliteral}{"{}\#"{}} << command << endl;}
+\DoxyCodeLine{169             Cursos.\mbox{\hyperlink{class_cjt___cursos_afc785c1b83e9fd95746b542b0df3c434}{listar\_cursos}}();}
+\DoxyCodeLine{170         \}}
+\DoxyCodeLine{171         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (command == \textcolor{stringliteral}{"{}escribir\_curso"{}} or command == \textcolor{stringliteral}{"{}ec"{}}) \{}
+\DoxyCodeLine{172             \textcolor{keywordtype}{int} c;}
+\DoxyCodeLine{173             cin >> c;}
+\DoxyCodeLine{174             cout << \textcolor{stringliteral}{"{}\#"{}} << command << \textcolor{stringliteral}{"{} "{}} << c << endl;}
+\DoxyCodeLine{175             Cursos.\mbox{\hyperlink{class_cjt___cursos_ac1d073c4ac7117d35fb4e893b3af9c68}{escribir\_curso}}(c);}
+\DoxyCodeLine{176         \}}
+\DoxyCodeLine{177         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (command == \textcolor{stringliteral}{"{}listar\_usuarios"{}} or command == \textcolor{stringliteral}{"{}lu"{}}) \{}
+\DoxyCodeLine{178             cout << \textcolor{stringliteral}{"{}\#"{}} << command << endl;}
+\DoxyCodeLine{179             Usuarios.\mbox{\hyperlink{class_cjt___usuarios_a1c391b457c52780aa09fe805602b3a6f}{listar\_usuarios}}();}
+\DoxyCodeLine{180         \}}
+\DoxyCodeLine{181         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (command == \textcolor{stringliteral}{"{}escribir\_usuario"{}} or command == \textcolor{stringliteral}{"{}eu"{}}) \{}
+\DoxyCodeLine{182             \textcolor{keywordtype}{string} u;}
+\DoxyCodeLine{183             cin >> u;}
+\DoxyCodeLine{184             cout << \textcolor{stringliteral}{"{}\#"{}} << command << \textcolor{stringliteral}{"{} "{}} << u << endl;}
+\DoxyCodeLine{185             Usuarios.\mbox{\hyperlink{class_cjt___usuarios_aa5ad40873f489d46b5f0da13067ce848}{escribir\_usuario}}(u);}
+\DoxyCodeLine{186         \}}
+\DoxyCodeLine{187         cin >> command;}
+\DoxyCodeLine{188     \}}
+\DoxyCodeLine{189 \}}
+
+\end{DoxyCode}

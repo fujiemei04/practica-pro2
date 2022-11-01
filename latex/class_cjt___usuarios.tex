@@ -1,0 +1,929 @@
+\hypertarget{class_cjt___usuarios}{}\doxysection{Referencia de la Clase Cjt\+\_\+\+Usuarios}
+\label{class_cjt___usuarios}\index{Cjt\_Usuarios@{Cjt\_Usuarios}}
+
+
+Representa la información y las operaciones asociadas a un conjunto de usuarios.  
+
+
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_cjt___usuarios_a15a8a70967fe417393ceba967a3ad50b}{Cjt\+\_\+\+Usuarios}} ()
+\begin{DoxyCompactList}\small\item\em Constructora por defecto. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_cjt___usuarios_a1432d1914ebcf51a02926a2dd1888c08}{consultar\+\_\+inscrito\+\_\+curso}} (const string \&u) const
+\begin{DoxyCompactList}\small\item\em Consulta en que curso esta inscrito el usuario u. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_cjt___usuarios_ac9e7b231889d68dc9833afe593a4643b}{buscar\+\_\+usuario}} (string p) const
+\begin{DoxyCompactList}\small\item\em Busca si un usuario existe. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_cjt___usuarios_a738c4a4e36ac7e365253d895e66e3d11}{curso\+\_\+usuario}} (const string \&usuario) const
+\begin{DoxyCompactList}\small\item\em Consulta el curso en el que esta inscrito el usuario p si existe. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_cjt___usuarios_a90f3f2f6e5be6811fab9e9f5ed7271ed}{consultar\+\_\+env\+\_\+prob}} (const string \&u) const
+\begin{DoxyCompactList}\small\item\em Consulta cuantos envios ha realizado un usuario. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_cjt___usuarios_af23248856adb5d5264c753570f7a0db0}{envios\+\_\+a\+\_\+prob}} (const string \&u, const string \&p) const
+\begin{DoxyCompactList}\small\item\em Consulta si una problema ya ha sido intentado por un usuario. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_cjt___usuarios_a3cebbc7bf1ed9088e0af21d4092a25bf}{usuario\+\_\+inscrito}} (const string \&u) const
+\begin{DoxyCompactList}\small\item\em Consulta si un usuario esta en la plataforma. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_cjt___usuarios_a70d1048b23c023fab97f72068c83d0a6}{prob\+\_\+resolucions}} (const string \&u, const string \&p) const
+\begin{DoxyCompactList}\small\item\em Consulta si un usuario ya ha resuelto un problema. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_cjt___usuarios_adbebbaf6e7dce83529555b5fe71f539b}{consultar\+\_\+envios\+\_\+u}} (const string \&u) const
+\begin{DoxyCompactList}\small\item\em Consulta el numero de envios de un usuario. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_cjt___usuarios_addf09f3ea48f6735490dc69c672663fe}{consultar\+\_\+resueltos\+\_\+u}} (const string \&u) const
+\begin{DoxyCompactList}\small\item\em Consulta el numero de problemas resueltos de un usuario. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_cjt___usuarios_aae5e8388a452a634cf96d50e8946a521}{consultar\+\_\+prob\+\_\+env\+\_\+tam}} (const string \&u) const
+\begin{DoxyCompactList}\small\item\em Consulta el numero de problemas enviables de un usuario u. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_cjt___usuarios_aa6c2a7675409f6a76c56f2e8294e415d}{alta\+\_\+usuario}} (const string \&u)
+\begin{DoxyCompactList}\small\item\em Da de alta un usuario. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_cjt___usuarios_a4d827a290aa0799286262fcaf309ebde}{baja\+\_\+usuario}} (const string \&u, int \&n)
+\begin{DoxyCompactList}\small\item\em Da de baja un usuario. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cjt___usuarios_a096e046ab32d833d3f9eefdd1337038a}{modificar\+\_\+curso\+\_\+inscrito}} (int n, string p)
+\begin{DoxyCompactList}\small\item\em Modifica el curso inscrito por un usuario. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cjt___usuarios_a0619b7f6c99c7592707cddf9e299bbaa}{anadir\+\_\+prob\+\_\+enviable}} (const string \&p, const string \&u)
+\begin{DoxyCompactList}\small\item\em Se añade un problema a los problemas enviables. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cjt___usuarios_a54b300ea77287fdbdc201c94c681cf14}{modificar\+\_\+envios\+\_\+a\+\_\+problemas\+\_\+dif}} (int c, const string \&u)
+\begin{DoxyCompactList}\small\item\em Modifica el numero de envios a problemas diferentes de un usuario. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cjt___usuarios_a4279d970eeb6a1c7846b0d54d3387ffb}{modificar\+\_\+envios\+\_\+u}} (int c, const string \&u)
+\begin{DoxyCompactList}\small\item\em Modifica el numero de envios totales a problemas de un usuario. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cjt___usuarios_ac18823e0d3e3784c9332d49474dd51f5}{modificar\+\_\+resueltos\+\_\+u}} (int c, const string \&u)
+\begin{DoxyCompactList}\small\item\em Modifica el numero de problemas resueltos de un usuario. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cjt___usuarios_a4065b0f0aeb105721cf5301e9d5f2aba}{modificar\+\_\+curso\+\_\+u}} (const string \&u, int i)
+\begin{DoxyCompactList}\small\item\em Modifica el curso en el que esta inscrito un usuario. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cjt___usuarios_a54a98c515f877e0b0cf86c9fea51cbb3}{quitar\+\_\+prob\+\_\+env}} (const string \&p, const string \&u)
+\begin{DoxyCompactList}\small\item\em Elimina un problema enviables de un usuario. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cjt___usuarios_a9d27a0797ce7e4c005cc55e9d2263cf7}{modf\+\_\+env\+\_\+pe}} (const string \&s, const string \&p)
+\begin{DoxyCompactList}\small\item\em Se modifica el numero de veces que se han hecho envios a un problema enviables. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cjt___usuarios_ab0c34a6249ac1adcc015f1806003eaa2}{anadir\+\_\+prob\+\_\+resuelto}} (const string \&p, const string \&u)
+\begin{DoxyCompactList}\small\item\em Añade un problema a los problemas resueltos de un usuario. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cjt___usuarios_aa7796fc424a0ab803539c9d17083b5ac}{anadir\+\_\+envios\+\_\+a\+\_\+prob}} (const string \&p, const string \&u)
+\begin{DoxyCompactList}\small\item\em Añade un problema a los problemas que un usuario ha hecho un envio pero no ha intentado resolver anteriormente. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cjt___usuarios_a1796f4d44303d1592d191c21a6625e0d}{leer\+\_\+cjt\+\_\+usuario}} (int n)
+\begin{DoxyCompactList}\small\item\em Lectura de un conjunto de usuarios. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cjt___usuarios_a1c391b457c52780aa09fe805602b3a6f}{listar\+\_\+usuarios}} () const
+\begin{DoxyCompactList}\small\item\em Escritura de un conjunto usuarios. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cjt___usuarios_aa5ad40873f489d46b5f0da13067ce848}{escribir\+\_\+usuario}} (string p) const
+\begin{DoxyCompactList}\small\item\em Escritura de un usuario. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cjt___usuarios_a5b72d574126657aa62676aeb76402988}{imprimir\+\_\+problemas\+\_\+enviables}} (const string \&u) const
+\begin{DoxyCompactList}\small\item\em Escritura de los problemas enviables del usuario p. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cjt___usuarios_ae4396f2cf7acb44868bb6fccf9f11256}{imprimir\+\_\+problemas\+\_\+resueltos}} (const string \&u) const
+\begin{DoxyCompactList}\small\item\em Escritura de los problemas resueltos del usuario p. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+map$<$ string, \mbox{\hyperlink{class_usuario}{Usuario}} $>$ \mbox{\hyperlink{class_cjt___usuarios_afe5005a432d25260ec5b2fcbfb2cc3c7}{U}}
+\begin{DoxyCompactList}\small\item\em Un map de usuarios con el nombre del usuario como key. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Representa la información y las operaciones asociadas a un conjunto de usuarios. 
+
+Sus operaciones son la consultoras curso inscrito por un usuario (que existe), la busqueda de un usuario, el curso inscrito por un usuario, los envios realizados por un usuario, si un usuario ya ha intentado resolver un problema, si un usuario existe en la plataforma, el numero de envios correctos y totales de un usuario y cuantos problemas hay en los problemas enviables de un usuario. Las modificadoras alta y baja de un usuario, modificacion del curso inscrito de un usuario, adicion de un problema a los problemas enviables de un usuario, la modificacion del numero de envios a un problema enviables, la de quitar un problema de los problemas enviables y añadir un problema si ha sido el primer intento. La lectura y escritura de un conjunto de usuarios, de un usuario y de los problemas enviables y resueltos. 
+
+Definición en la línea 25 del archivo Cjt\+\_\+\+Usuarios.\+hh.
+
+
+
+\doxysubsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{class_cjt___usuarios_a15a8a70967fe417393ceba967a3ad50b}\label{class_cjt___usuarios_a15a8a70967fe417393ceba967a3ad50b}} 
+\index{Cjt\_Usuarios@{Cjt\_Usuarios}!Cjt\_Usuarios@{Cjt\_Usuarios}}
+\index{Cjt\_Usuarios@{Cjt\_Usuarios}!Cjt\_Usuarios@{Cjt\_Usuarios}}
+\doxysubsubsection{\texorpdfstring{Cjt\_Usuarios()}{Cjt\_Usuarios()}}
+{\footnotesize\ttfamily Cjt\+\_\+\+Usuarios\+::\+Cjt\+\_\+\+Usuarios (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructora por defecto. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Sea ha creado un conjunto de usuarios vacio 
+\end{DoxyPostcond}
+
+
+Definición en la línea 8 del archivo Cjt\+\_\+\+Usuarios.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{8                            \{}
+\DoxyCodeLine{9 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_cjt___usuarios_a1432d1914ebcf51a02926a2dd1888c08}\label{class_cjt___usuarios_a1432d1914ebcf51a02926a2dd1888c08}} 
+\index{Cjt\_Usuarios@{Cjt\_Usuarios}!consultar\_inscrito\_curso@{consultar\_inscrito\_curso}}
+\index{consultar\_inscrito\_curso@{consultar\_inscrito\_curso}!Cjt\_Usuarios@{Cjt\_Usuarios}}
+\doxysubsubsection{\texorpdfstring{consultar\_inscrito\_curso()}{consultar\_inscrito\_curso()}}
+{\footnotesize\ttfamily int Cjt\+\_\+\+Usuarios\+::consultar\+\_\+inscrito\+\_\+curso (\begin{DoxyParamCaption}\item[{const string \&}]{u }\end{DoxyParamCaption}) const}
+
+
+
+Consulta en que curso esta inscrito el usuario u. 
+
+\begin{DoxyPrecond}{Precondición}
+El usuario u existe 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es el curso inscrito por el usuario u del parametro implicito 
+\end{DoxyPostcond}
+
+
+Definición en la línea 11 del archivo Cjt\+\_\+\+Usuarios.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{11                                                                 \{}
+\DoxyCodeLine{12   map<string,Usuario>::const\_iterator it = \mbox{\hyperlink{class_cjt___usuarios_afe5005a432d25260ec5b2fcbfb2cc3c7}{U}}.find(u);}
+\DoxyCodeLine{13   \textcolor{keywordflow}{return} it-\/>second.consultar\_curso\_inscrito();}
+\DoxyCodeLine{14 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cjt___usuarios_ac9e7b231889d68dc9833afe593a4643b}\label{class_cjt___usuarios_ac9e7b231889d68dc9833afe593a4643b}} 
+\index{Cjt\_Usuarios@{Cjt\_Usuarios}!buscar\_usuario@{buscar\_usuario}}
+\index{buscar\_usuario@{buscar\_usuario}!Cjt\_Usuarios@{Cjt\_Usuarios}}
+\doxysubsubsection{\texorpdfstring{buscar\_usuario()}{buscar\_usuario()}}
+{\footnotesize\ttfamily bool Cjt\+\_\+\+Usuarios\+::buscar\+\_\+usuario (\begin{DoxyParamCaption}\item[{string}]{p }\end{DoxyParamCaption}) const}
+
+
+
+Busca si un usuario existe. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es true si el usuario p existe en el parametro implicito,falso contrariamente 
+\end{DoxyPostcond}
+
+
+Definición en la línea 16 del archivo Cjt\+\_\+\+Usuarios.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{16                                                 \{}
+\DoxyCodeLine{17    map<string,Usuario>::const\_iterator it = \mbox{\hyperlink{class_cjt___usuarios_afe5005a432d25260ec5b2fcbfb2cc3c7}{U}}.find(p);}
+\DoxyCodeLine{18    \textcolor{keywordflow}{return} it != \mbox{\hyperlink{class_cjt___usuarios_afe5005a432d25260ec5b2fcbfb2cc3c7}{U}}.end();}
+\DoxyCodeLine{19 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cjt___usuarios_a738c4a4e36ac7e365253d895e66e3d11}\label{class_cjt___usuarios_a738c4a4e36ac7e365253d895e66e3d11}} 
+\index{Cjt\_Usuarios@{Cjt\_Usuarios}!curso\_usuario@{curso\_usuario}}
+\index{curso\_usuario@{curso\_usuario}!Cjt\_Usuarios@{Cjt\_Usuarios}}
+\doxysubsubsection{\texorpdfstring{curso\_usuario()}{curso\_usuario()}}
+{\footnotesize\ttfamily int Cjt\+\_\+\+Usuarios\+::curso\+\_\+usuario (\begin{DoxyParamCaption}\item[{const string \&}]{usuario }\end{DoxyParamCaption}) const}
+
+
+
+Consulta el curso en el que esta inscrito el usuario p si existe. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es el curso inscrito por p si existe en el parametro implicito, -\/1 contrariamente 
+\end{DoxyPostcond}
+
+
+Definición en la línea 21 del archivo Cjt\+\_\+\+Usuarios.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{21                                                            \{}
+\DoxyCodeLine{22    map<string,Usuario>::const\_iterator it = \mbox{\hyperlink{class_cjt___usuarios_afe5005a432d25260ec5b2fcbfb2cc3c7}{U}}.find(usuario);}
+\DoxyCodeLine{23    \textcolor{keywordflow}{if} (it == \mbox{\hyperlink{class_cjt___usuarios_afe5005a432d25260ec5b2fcbfb2cc3c7}{U}}.end()) \textcolor{keywordflow}{return} -\/1;}
+\DoxyCodeLine{24    \textcolor{keywordflow}{return} it-\/>second.consultar\_curso\_inscrito();}
+\DoxyCodeLine{25 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cjt___usuarios_a90f3f2f6e5be6811fab9e9f5ed7271ed}\label{class_cjt___usuarios_a90f3f2f6e5be6811fab9e9f5ed7271ed}} 
+\index{Cjt\_Usuarios@{Cjt\_Usuarios}!consultar\_env\_prob@{consultar\_env\_prob}}
+\index{consultar\_env\_prob@{consultar\_env\_prob}!Cjt\_Usuarios@{Cjt\_Usuarios}}
+\doxysubsubsection{\texorpdfstring{consultar\_env\_prob()}{consultar\_env\_prob()}}
+{\footnotesize\ttfamily int Cjt\+\_\+\+Usuarios\+::consultar\+\_\+env\+\_\+prob (\begin{DoxyParamCaption}\item[{const string \&}]{u }\end{DoxyParamCaption}) const}
+
+
+
+Consulta cuantos envios ha realizado un usuario. 
+
+\begin{DoxyPrecond}{Precondición}
+El usuario u existe 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es el numero de envios realizado por el usuario u del parametro implicito 
+\end{DoxyPostcond}
+
+
+Definición en la línea 27 del archivo Cjt\+\_\+\+Usuarios.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{27                                                           \{}
+\DoxyCodeLine{28    map<string,Usuario>::const\_iterator it = \mbox{\hyperlink{class_cjt___usuarios_afe5005a432d25260ec5b2fcbfb2cc3c7}{U}}.find(u);}
+\DoxyCodeLine{29    \textcolor{keywordflow}{return} it-\/>second.consultar\_envios\_problemas();}
+\DoxyCodeLine{30 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cjt___usuarios_af23248856adb5d5264c753570f7a0db0}\label{class_cjt___usuarios_af23248856adb5d5264c753570f7a0db0}} 
+\index{Cjt\_Usuarios@{Cjt\_Usuarios}!envios\_a\_prob@{envios\_a\_prob}}
+\index{envios\_a\_prob@{envios\_a\_prob}!Cjt\_Usuarios@{Cjt\_Usuarios}}
+\doxysubsubsection{\texorpdfstring{envios\_a\_prob()}{envios\_a\_prob()}}
+{\footnotesize\ttfamily bool Cjt\+\_\+\+Usuarios\+::envios\+\_\+a\+\_\+prob (\begin{DoxyParamCaption}\item[{const string \&}]{u,  }\item[{const string \&}]{p }\end{DoxyParamCaption}) const}
+
+
+
+Consulta si una problema ya ha sido intentado por un usuario. 
+
+\begin{DoxyPrecond}{Precondición}
+El usuario u existe 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es cierto si el usuario u ya ha intentado resolver el problema p, falso contrariamente 
+\end{DoxyPostcond}
+
+
+Definición en la línea 32 del archivo Cjt\+\_\+\+Usuarios.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{32                                                                      \{}
+\DoxyCodeLine{33    map<string,Usuario>::const\_iterator it = \mbox{\hyperlink{class_cjt___usuarios_afe5005a432d25260ec5b2fcbfb2cc3c7}{U}}.find(u);}
+\DoxyCodeLine{34    \textcolor{keywordflow}{return} it-\/>second.envios\_prob\_aux(p);}
+\DoxyCodeLine{35 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cjt___usuarios_a3cebbc7bf1ed9088e0af21d4092a25bf}\label{class_cjt___usuarios_a3cebbc7bf1ed9088e0af21d4092a25bf}} 
+\index{Cjt\_Usuarios@{Cjt\_Usuarios}!usuario\_inscrito@{usuario\_inscrito}}
+\index{usuario\_inscrito@{usuario\_inscrito}!Cjt\_Usuarios@{Cjt\_Usuarios}}
+\doxysubsubsection{\texorpdfstring{usuario\_inscrito()}{usuario\_inscrito()}}
+{\footnotesize\ttfamily bool Cjt\+\_\+\+Usuarios\+::usuario\+\_\+inscrito (\begin{DoxyParamCaption}\item[{const string \&}]{u }\end{DoxyParamCaption}) const}
+
+
+
+Consulta si un usuario esta en la plataforma. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es cierto si el usuario u esta en la plataforma,falso contrariamente 
+\end{DoxyPostcond}
+
+
+Definición en la línea 37 del archivo Cjt\+\_\+\+Usuarios.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{37                                                          \{}
+\DoxyCodeLine{38    map<string,Usuario>::const\_iterator it = \mbox{\hyperlink{class_cjt___usuarios_afe5005a432d25260ec5b2fcbfb2cc3c7}{U}}.find(u);}
+\DoxyCodeLine{39    \textcolor{keywordflow}{if} (it == \mbox{\hyperlink{class_cjt___usuarios_afe5005a432d25260ec5b2fcbfb2cc3c7}{U}}.end()) \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{40    \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{41 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cjt___usuarios_a70d1048b23c023fab97f72068c83d0a6}\label{class_cjt___usuarios_a70d1048b23c023fab97f72068c83d0a6}} 
+\index{Cjt\_Usuarios@{Cjt\_Usuarios}!prob\_resolucions@{prob\_resolucions}}
+\index{prob\_resolucions@{prob\_resolucions}!Cjt\_Usuarios@{Cjt\_Usuarios}}
+\doxysubsubsection{\texorpdfstring{prob\_resolucions()}{prob\_resolucions()}}
+{\footnotesize\ttfamily bool Cjt\+\_\+\+Usuarios\+::prob\+\_\+resolucions (\begin{DoxyParamCaption}\item[{const string \&}]{u,  }\item[{const string \&}]{p }\end{DoxyParamCaption}) const}
+
+
+
+Consulta si un usuario ya ha resuelto un problema. 
+
+\begin{DoxyPrecond}{Precondición}
+El usuario u y el problema p existen 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es cierto si el usuario u ya ha resuelto el problema p,falso contrariamente 
+\end{DoxyPostcond}
+
+
+Definición en la línea 43 del archivo Cjt\+\_\+\+Usuarios.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{43                                                                          \{}
+\DoxyCodeLine{44    map<string,Usuario>::const\_iterator it = \mbox{\hyperlink{class_cjt___usuarios_afe5005a432d25260ec5b2fcbfb2cc3c7}{U}}.find(u);}
+\DoxyCodeLine{45    \textcolor{keywordflow}{return} it-\/>second.prob\_resolucio(p);}
+\DoxyCodeLine{46 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cjt___usuarios_adbebbaf6e7dce83529555b5fe71f539b}\label{class_cjt___usuarios_adbebbaf6e7dce83529555b5fe71f539b}} 
+\index{Cjt\_Usuarios@{Cjt\_Usuarios}!consultar\_envios\_u@{consultar\_envios\_u}}
+\index{consultar\_envios\_u@{consultar\_envios\_u}!Cjt\_Usuarios@{Cjt\_Usuarios}}
+\doxysubsubsection{\texorpdfstring{consultar\_envios\_u()}{consultar\_envios\_u()}}
+{\footnotesize\ttfamily int Cjt\+\_\+\+Usuarios\+::consultar\+\_\+envios\+\_\+u (\begin{DoxyParamCaption}\item[{const string \&}]{u }\end{DoxyParamCaption}) const}
+
+
+
+Consulta el numero de envios de un usuario. 
+
+\begin{DoxyPrecond}{Precondición}
+El usuario u existe 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es el numero de envios de usuario u 
+\end{DoxyPostcond}
+
+
+Definición en la línea 48 del archivo Cjt\+\_\+\+Usuarios.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{48                                                           \{}
+\DoxyCodeLine{49     map<string,Usuario>::const\_iterator it = \mbox{\hyperlink{class_cjt___usuarios_afe5005a432d25260ec5b2fcbfb2cc3c7}{U}}.find(u);}
+\DoxyCodeLine{50    \textcolor{keywordflow}{return} it-\/>second.consultar\_envios();}
+\DoxyCodeLine{51 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cjt___usuarios_addf09f3ea48f6735490dc69c672663fe}\label{class_cjt___usuarios_addf09f3ea48f6735490dc69c672663fe}} 
+\index{Cjt\_Usuarios@{Cjt\_Usuarios}!consultar\_resueltos\_u@{consultar\_resueltos\_u}}
+\index{consultar\_resueltos\_u@{consultar\_resueltos\_u}!Cjt\_Usuarios@{Cjt\_Usuarios}}
+\doxysubsubsection{\texorpdfstring{consultar\_resueltos\_u()}{consultar\_resueltos\_u()}}
+{\footnotesize\ttfamily int Cjt\+\_\+\+Usuarios\+::consultar\+\_\+resueltos\+\_\+u (\begin{DoxyParamCaption}\item[{const string \&}]{u }\end{DoxyParamCaption}) const}
+
+
+
+Consulta el numero de problemas resueltos de un usuario. 
+
+\begin{DoxyPrecond}{Precondición}
+El usuario u existe 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es el numero de problemas resueltos de un usuario u 
+\end{DoxyPostcond}
+
+
+Definición en la línea 53 del archivo Cjt\+\_\+\+Usuarios.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{53                                                              \{}
+\DoxyCodeLine{54    map<string,Usuario>::const\_iterator it = \mbox{\hyperlink{class_cjt___usuarios_afe5005a432d25260ec5b2fcbfb2cc3c7}{U}}.find(u);}
+\DoxyCodeLine{55    \textcolor{keywordflow}{return} it-\/>second.consultar\_resueltos();}
+\DoxyCodeLine{56 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cjt___usuarios_aae5e8388a452a634cf96d50e8946a521}\label{class_cjt___usuarios_aae5e8388a452a634cf96d50e8946a521}} 
+\index{Cjt\_Usuarios@{Cjt\_Usuarios}!consultar\_prob\_env\_tam@{consultar\_prob\_env\_tam}}
+\index{consultar\_prob\_env\_tam@{consultar\_prob\_env\_tam}!Cjt\_Usuarios@{Cjt\_Usuarios}}
+\doxysubsubsection{\texorpdfstring{consultar\_prob\_env\_tam()}{consultar\_prob\_env\_tam()}}
+{\footnotesize\ttfamily int Cjt\+\_\+\+Usuarios\+::consultar\+\_\+prob\+\_\+env\+\_\+tam (\begin{DoxyParamCaption}\item[{const string \&}]{u }\end{DoxyParamCaption}) const}
+
+
+
+Consulta el numero de problemas enviables de un usuario u. 
+
+\begin{DoxyPrecond}{Precondición}
+El usuario u existe 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es el numero de problemas enviables de un usuario u 
+\end{DoxyPostcond}
+
+
+Definición en la línea 58 del archivo Cjt\+\_\+\+Usuarios.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{58                                                               \{}
+\DoxyCodeLine{59    map<string,Usuario>::const\_iterator it = \mbox{\hyperlink{class_cjt___usuarios_afe5005a432d25260ec5b2fcbfb2cc3c7}{U}}.find(u);}
+\DoxyCodeLine{60    \textcolor{keywordflow}{return} it-\/>second.consultar\_tam\_prob\_env();}
+\DoxyCodeLine{61 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cjt___usuarios_aa6c2a7675409f6a76c56f2e8294e415d}\label{class_cjt___usuarios_aa6c2a7675409f6a76c56f2e8294e415d}} 
+\index{Cjt\_Usuarios@{Cjt\_Usuarios}!alta\_usuario@{alta\_usuario}}
+\index{alta\_usuario@{alta\_usuario}!Cjt\_Usuarios@{Cjt\_Usuarios}}
+\doxysubsubsection{\texorpdfstring{alta\_usuario()}{alta\_usuario()}}
+{\footnotesize\ttfamily int Cjt\+\_\+\+Usuarios\+::alta\+\_\+usuario (\begin{DoxyParamCaption}\item[{const string \&}]{u }\end{DoxyParamCaption})}
+
+
+
+Da de alta un usuario. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Si el usuario u ya existia en la plataforma devuelve un -\/1. En caso contrario se imprime el número de usuarios registrados después de añadirlo. 
+\end{DoxyPostcond}
+
+
+Definición en la línea 64 del archivo Cjt\+\_\+\+Usuarios.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{64                                               \{}
+\DoxyCodeLine{65    map<string,Usuario>::const\_iterator it = \mbox{\hyperlink{class_cjt___usuarios_afe5005a432d25260ec5b2fcbfb2cc3c7}{U}}.find(u);}
+\DoxyCodeLine{66    \textcolor{keywordflow}{if} (it == \mbox{\hyperlink{class_cjt___usuarios_afe5005a432d25260ec5b2fcbfb2cc3c7}{U}}.end()) \{}
+\DoxyCodeLine{67        \mbox{\hyperlink{class_usuario}{Usuario}} user;}
+\DoxyCodeLine{68        \mbox{\hyperlink{class_cjt___usuarios_afe5005a432d25260ec5b2fcbfb2cc3c7}{U}}.insert(make\_pair(u,user));}
+\DoxyCodeLine{69        \textcolor{keywordflow}{return} \mbox{\hyperlink{class_cjt___usuarios_afe5005a432d25260ec5b2fcbfb2cc3c7}{U}}.size();}
+\DoxyCodeLine{70    \}}
+\DoxyCodeLine{71    \textcolor{keywordflow}{else} \textcolor{keywordflow}{return} -\/1;}
+\DoxyCodeLine{72 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cjt___usuarios_a4d827a290aa0799286262fcaf309ebde}\label{class_cjt___usuarios_a4d827a290aa0799286262fcaf309ebde}} 
+\index{Cjt\_Usuarios@{Cjt\_Usuarios}!baja\_usuario@{baja\_usuario}}
+\index{baja\_usuario@{baja\_usuario}!Cjt\_Usuarios@{Cjt\_Usuarios}}
+\doxysubsubsection{\texorpdfstring{baja\_usuario()}{baja\_usuario()}}
+{\footnotesize\ttfamily int Cjt\+\_\+\+Usuarios\+::baja\+\_\+usuario (\begin{DoxyParamCaption}\item[{const string \&}]{u,  }\item[{int \&}]{n }\end{DoxyParamCaption})}
+
+
+
+Da de baja un usuario. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Si no existe el usuario u en la plataforma con el mismo identificador devuelve un -\/1. En caso contrario se imprime el número de usuarios registrados después de borrarlo. 
+\end{DoxyPostcond}
+
+
+Definición en la línea 74 del archivo Cjt\+\_\+\+Usuarios.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{74                                                      \{}
+\DoxyCodeLine{75     map<string,Usuario>::iterator it = \mbox{\hyperlink{class_cjt___usuarios_afe5005a432d25260ec5b2fcbfb2cc3c7}{U}}.find(u);}
+\DoxyCodeLine{76     \textcolor{keywordflow}{if} (it != \mbox{\hyperlink{class_cjt___usuarios_afe5005a432d25260ec5b2fcbfb2cc3c7}{U}}.end()) \{}
+\DoxyCodeLine{77       n = it-\/>second.consultar\_curso\_inscrito();}
+\DoxyCodeLine{78       \mbox{\hyperlink{class_cjt___usuarios_afe5005a432d25260ec5b2fcbfb2cc3c7}{U}}.erase(it);}
+\DoxyCodeLine{79       \textcolor{keywordflow}{return} \mbox{\hyperlink{class_cjt___usuarios_afe5005a432d25260ec5b2fcbfb2cc3c7}{U}}.size();}
+\DoxyCodeLine{80    \}}
+\DoxyCodeLine{81    \textcolor{keywordflow}{return} -\/1;}
+\DoxyCodeLine{82 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cjt___usuarios_a096e046ab32d833d3f9eefdd1337038a}\label{class_cjt___usuarios_a096e046ab32d833d3f9eefdd1337038a}} 
+\index{Cjt\_Usuarios@{Cjt\_Usuarios}!modificar\_curso\_inscrito@{modificar\_curso\_inscrito}}
+\index{modificar\_curso\_inscrito@{modificar\_curso\_inscrito}!Cjt\_Usuarios@{Cjt\_Usuarios}}
+\doxysubsubsection{\texorpdfstring{modificar\_curso\_inscrito()}{modificar\_curso\_inscrito()}}
+{\footnotesize\ttfamily void Cjt\+\_\+\+Usuarios\+::modificar\+\_\+curso\+\_\+inscrito (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{string}]{p }\end{DoxyParamCaption})}
+
+
+
+Modifica el curso inscrito por un usuario. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El curso incrito por el usuario p del parametro implicito pasa a ser n 
+\end{DoxyPostcond}
+
+
+Definición en la línea 85 del archivo Cjt\+\_\+\+Usuarios.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{85                                                           \{}
+\DoxyCodeLine{86    map<string,Usuario>::iterator it = \mbox{\hyperlink{class_cjt___usuarios_afe5005a432d25260ec5b2fcbfb2cc3c7}{U}}.find(p);}
+\DoxyCodeLine{87    it-\/>second.modificar\_curso(n);}
+\DoxyCodeLine{88 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cjt___usuarios_a0619b7f6c99c7592707cddf9e299bbaa}\label{class_cjt___usuarios_a0619b7f6c99c7592707cddf9e299bbaa}} 
+\index{Cjt\_Usuarios@{Cjt\_Usuarios}!anadir\_prob\_enviable@{anadir\_prob\_enviable}}
+\index{anadir\_prob\_enviable@{anadir\_prob\_enviable}!Cjt\_Usuarios@{Cjt\_Usuarios}}
+\doxysubsubsection{\texorpdfstring{anadir\_prob\_enviable()}{anadir\_prob\_enviable()}}
+{\footnotesize\ttfamily void Cjt\+\_\+\+Usuarios\+::anadir\+\_\+prob\+\_\+enviable (\begin{DoxyParamCaption}\item[{const string \&}]{p,  }\item[{const string \&}]{u }\end{DoxyParamCaption})}
+
+
+
+Se añade un problema a los problemas enviables. 
+
+\begin{DoxyPrecond}{Precondición}
+El usuario u existe 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El problema p es añadido a los problemas enviables del usuario u 
+\end{DoxyPostcond}
+
+
+Definición en la línea 91 del archivo Cjt\+\_\+\+Usuarios.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{91                                                                        \{}
+\DoxyCodeLine{92    map<string,Usuario>::iterator it = \mbox{\hyperlink{class_cjt___usuarios_afe5005a432d25260ec5b2fcbfb2cc3c7}{U}}.find(u);}
+\DoxyCodeLine{93    it-\/>second.anadir\_prob\_env(p);}
+\DoxyCodeLine{94 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cjt___usuarios_a54b300ea77287fdbdc201c94c681cf14}\label{class_cjt___usuarios_a54b300ea77287fdbdc201c94c681cf14}} 
+\index{Cjt\_Usuarios@{Cjt\_Usuarios}!modificar\_envios\_a\_problemas\_dif@{modificar\_envios\_a\_problemas\_dif}}
+\index{modificar\_envios\_a\_problemas\_dif@{modificar\_envios\_a\_problemas\_dif}!Cjt\_Usuarios@{Cjt\_Usuarios}}
+\doxysubsubsection{\texorpdfstring{modificar\_envios\_a\_problemas\_dif()}{modificar\_envios\_a\_problemas\_dif()}}
+{\footnotesize\ttfamily void Cjt\+\_\+\+Usuarios\+::modificar\+\_\+envios\+\_\+a\+\_\+problemas\+\_\+dif (\begin{DoxyParamCaption}\item[{int}]{c,  }\item[{const string \&}]{u }\end{DoxyParamCaption})}
+
+
+
+Modifica el numero de envios a problemas diferentes de un usuario. 
+
+\begin{DoxyPrecond}{Precondición}
+El usuario u existe 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El numero de envios a problemas diferentes del usuario u del parametro implicito pasas a ser el entero c 
+\end{DoxyPostcond}
+
+
+Definición en la línea 96 del archivo Cjt\+\_\+\+Usuarios.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{96                                                                          \{}
+\DoxyCodeLine{97    map<string,Usuario>::iterator it = \mbox{\hyperlink{class_cjt___usuarios_afe5005a432d25260ec5b2fcbfb2cc3c7}{U}}.find(u);}
+\DoxyCodeLine{98    it-\/>second.modificar\_envios\_problemas(c);}
+\DoxyCodeLine{99 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cjt___usuarios_a4279d970eeb6a1c7846b0d54d3387ffb}\label{class_cjt___usuarios_a4279d970eeb6a1c7846b0d54d3387ffb}} 
+\index{Cjt\_Usuarios@{Cjt\_Usuarios}!modificar\_envios\_u@{modificar\_envios\_u}}
+\index{modificar\_envios\_u@{modificar\_envios\_u}!Cjt\_Usuarios@{Cjt\_Usuarios}}
+\doxysubsubsection{\texorpdfstring{modificar\_envios\_u()}{modificar\_envios\_u()}}
+{\footnotesize\ttfamily void Cjt\+\_\+\+Usuarios\+::modificar\+\_\+envios\+\_\+u (\begin{DoxyParamCaption}\item[{int}]{c,  }\item[{const string \&}]{u }\end{DoxyParamCaption})}
+
+
+
+Modifica el numero de envios totales a problemas de un usuario. 
+
+\begin{DoxyPrecond}{Precondición}
+El usuario u existe 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El numero de envios totales del usuario u del parametro implicito pasas a ser el entero c 
+\end{DoxyPostcond}
+
+
+Definición en la línea 101 del archivo Cjt\+\_\+\+Usuarios.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{101                                                            \{}
+\DoxyCodeLine{102    map<string,Usuario>::iterator it = \mbox{\hyperlink{class_cjt___usuarios_afe5005a432d25260ec5b2fcbfb2cc3c7}{U}}.find(u);}
+\DoxyCodeLine{103    it-\/>second.modificar\_envios(c);}
+\DoxyCodeLine{104 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cjt___usuarios_ac18823e0d3e3784c9332d49474dd51f5}\label{class_cjt___usuarios_ac18823e0d3e3784c9332d49474dd51f5}} 
+\index{Cjt\_Usuarios@{Cjt\_Usuarios}!modificar\_resueltos\_u@{modificar\_resueltos\_u}}
+\index{modificar\_resueltos\_u@{modificar\_resueltos\_u}!Cjt\_Usuarios@{Cjt\_Usuarios}}
+\doxysubsubsection{\texorpdfstring{modificar\_resueltos\_u()}{modificar\_resueltos\_u()}}
+{\footnotesize\ttfamily void Cjt\+\_\+\+Usuarios\+::modificar\+\_\+resueltos\+\_\+u (\begin{DoxyParamCaption}\item[{int}]{c,  }\item[{const string \&}]{u }\end{DoxyParamCaption})}
+
+
+
+Modifica el numero de problemas resueltos de un usuario. 
+
+\begin{DoxyPrecond}{Precondición}
+El usuario u existe 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El numero de problemas resueltos del usuario u del parametro implicito pasas a ser el entero c 
+\end{DoxyPostcond}
+
+
+Definición en la línea 106 del archivo Cjt\+\_\+\+Usuarios.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{106                                                               \{}
+\DoxyCodeLine{107    map<string,Usuario>::iterator it = \mbox{\hyperlink{class_cjt___usuarios_afe5005a432d25260ec5b2fcbfb2cc3c7}{U}}.find(u);}
+\DoxyCodeLine{108    it-\/>second.modificar\_resueltos(c);}
+\DoxyCodeLine{109 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cjt___usuarios_a4065b0f0aeb105721cf5301e9d5f2aba}\label{class_cjt___usuarios_a4065b0f0aeb105721cf5301e9d5f2aba}} 
+\index{Cjt\_Usuarios@{Cjt\_Usuarios}!modificar\_curso\_u@{modificar\_curso\_u}}
+\index{modificar\_curso\_u@{modificar\_curso\_u}!Cjt\_Usuarios@{Cjt\_Usuarios}}
+\doxysubsubsection{\texorpdfstring{modificar\_curso\_u()}{modificar\_curso\_u()}}
+{\footnotesize\ttfamily void Cjt\+\_\+\+Usuarios\+::modificar\+\_\+curso\+\_\+u (\begin{DoxyParamCaption}\item[{const string \&}]{u,  }\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Modifica el curso en el que esta inscrito un usuario. 
+
+\begin{DoxyPrecond}{Precondición}
+El usuario u existe 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El curso en el que esta inscrito el usuario u del parametro implicito pasa a ser el entero i 
+\end{DoxyPostcond}
+
+
+Definición en la línea 111 del archivo Cjt\+\_\+\+Usuarios.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{111                                                           \{}
+\DoxyCodeLine{112    map<string,Usuario>::iterator it = \mbox{\hyperlink{class_cjt___usuarios_afe5005a432d25260ec5b2fcbfb2cc3c7}{U}}.find(u);}
+\DoxyCodeLine{113    it-\/>second.modificar\_curso(i);}
+\DoxyCodeLine{114 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cjt___usuarios_a54a98c515f877e0b0cf86c9fea51cbb3}\label{class_cjt___usuarios_a54a98c515f877e0b0cf86c9fea51cbb3}} 
+\index{Cjt\_Usuarios@{Cjt\_Usuarios}!quitar\_prob\_env@{quitar\_prob\_env}}
+\index{quitar\_prob\_env@{quitar\_prob\_env}!Cjt\_Usuarios@{Cjt\_Usuarios}}
+\doxysubsubsection{\texorpdfstring{quitar\_prob\_env()}{quitar\_prob\_env()}}
+{\footnotesize\ttfamily void Cjt\+\_\+\+Usuarios\+::quitar\+\_\+prob\+\_\+env (\begin{DoxyParamCaption}\item[{const string \&}]{p,  }\item[{const string \&}]{u }\end{DoxyParamCaption})}
+
+
+
+Elimina un problema enviables de un usuario. 
+
+\begin{DoxyPrecond}{Precondición}
+El usuario u existe 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El problema p es eliminado de los problemas enviables del usuario u del parametro implicito 
+\end{DoxyPostcond}
+
+
+Definición en la línea 116 del archivo Cjt\+\_\+\+Usuarios.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{116                                                                   \{}
+\DoxyCodeLine{117    map<string,Usuario>::iterator it = \mbox{\hyperlink{class_cjt___usuarios_afe5005a432d25260ec5b2fcbfb2cc3c7}{U}}.find(u);}
+\DoxyCodeLine{118    it-\/>second.quitar\_problema\_env(p);}
+\DoxyCodeLine{119 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cjt___usuarios_a9d27a0797ce7e4c005cc55e9d2263cf7}\label{class_cjt___usuarios_a9d27a0797ce7e4c005cc55e9d2263cf7}} 
+\index{Cjt\_Usuarios@{Cjt\_Usuarios}!modf\_env\_pe@{modf\_env\_pe}}
+\index{modf\_env\_pe@{modf\_env\_pe}!Cjt\_Usuarios@{Cjt\_Usuarios}}
+\doxysubsubsection{\texorpdfstring{modf\_env\_pe()}{modf\_env\_pe()}}
+{\footnotesize\ttfamily void Cjt\+\_\+\+Usuarios\+::modf\+\_\+env\+\_\+pe (\begin{DoxyParamCaption}\item[{const string \&}]{s,  }\item[{const string \&}]{p }\end{DoxyParamCaption})}
+
+
+
+Se modifica el numero de veces que se han hecho envios a un problema enviables. 
+
+\begin{DoxyPrecond}{Precondición}
+El usuario s y la el problema p existen 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El problema p de los enviables se la añade 1 a las veces que ha recibido un envio 
+\end{DoxyPostcond}
+
+
+Definición en la línea 121 del archivo Cjt\+\_\+\+Usuarios.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{121                                                               \{}
+\DoxyCodeLine{122    map<string,Usuario>::iterator it = \mbox{\hyperlink{class_cjt___usuarios_afe5005a432d25260ec5b2fcbfb2cc3c7}{U}}.find(s);}
+\DoxyCodeLine{123    it-\/>second.modificar\_env\_pe(p);}
+\DoxyCodeLine{124 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cjt___usuarios_ab0c34a6249ac1adcc015f1806003eaa2}\label{class_cjt___usuarios_ab0c34a6249ac1adcc015f1806003eaa2}} 
+\index{Cjt\_Usuarios@{Cjt\_Usuarios}!anadir\_prob\_resuelto@{anadir\_prob\_resuelto}}
+\index{anadir\_prob\_resuelto@{anadir\_prob\_resuelto}!Cjt\_Usuarios@{Cjt\_Usuarios}}
+\doxysubsubsection{\texorpdfstring{anadir\_prob\_resuelto()}{anadir\_prob\_resuelto()}}
+{\footnotesize\ttfamily void Cjt\+\_\+\+Usuarios\+::anadir\+\_\+prob\+\_\+resuelto (\begin{DoxyParamCaption}\item[{const string \&}]{p,  }\item[{const string \&}]{u }\end{DoxyParamCaption})}
+
+
+
+Añade un problema a los problemas resueltos de un usuario. 
+
+\begin{DoxyPrecond}{Precondición}
+El problema p y el usuario u existen 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El problema p ha sido añadido a los problemas resueltos del usuario u del parametro implicito 
+\end{DoxyPostcond}
+
+
+Definición en la línea 126 del archivo Cjt\+\_\+\+Usuarios.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{126                                                                        \{}
+\DoxyCodeLine{127    map<string,Usuario>::iterator it = \mbox{\hyperlink{class_cjt___usuarios_afe5005a432d25260ec5b2fcbfb2cc3c7}{U}}.find(u);}
+\DoxyCodeLine{128    it-\/>second.anadir\_pr(p);}
+\DoxyCodeLine{129 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cjt___usuarios_aa7796fc424a0ab803539c9d17083b5ac}\label{class_cjt___usuarios_aa7796fc424a0ab803539c9d17083b5ac}} 
+\index{Cjt\_Usuarios@{Cjt\_Usuarios}!anadir\_envios\_a\_prob@{anadir\_envios\_a\_prob}}
+\index{anadir\_envios\_a\_prob@{anadir\_envios\_a\_prob}!Cjt\_Usuarios@{Cjt\_Usuarios}}
+\doxysubsubsection{\texorpdfstring{anadir\_envios\_a\_prob()}{anadir\_envios\_a\_prob()}}
+{\footnotesize\ttfamily void Cjt\+\_\+\+Usuarios\+::anadir\+\_\+envios\+\_\+a\+\_\+prob (\begin{DoxyParamCaption}\item[{const string \&}]{p,  }\item[{const string \&}]{u }\end{DoxyParamCaption})}
+
+
+
+Añade un problema a los problemas que un usuario ha hecho un envio pero no ha intentado resolver anteriormente. 
+
+\begin{DoxyPrecond}{Precondición}
+El problema p y el usuario u existen 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El problema p ha sido añadido a los problemas que el usuario u del parametro implicito no ha intentado resolver anteriormente pero ha hecho un envio 
+\end{DoxyPostcond}
+
+
+Definición en la línea 131 del archivo Cjt\+\_\+\+Usuarios.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{131                                                                      \{}
+\DoxyCodeLine{132     map<string,Usuario>::iterator it = \mbox{\hyperlink{class_cjt___usuarios_afe5005a432d25260ec5b2fcbfb2cc3c7}{U}}.find(u);}
+\DoxyCodeLine{133     it-\/>second.anadir\_env\_prob\_aux(p);}
+\DoxyCodeLine{134 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cjt___usuarios_a1796f4d44303d1592d191c21a6625e0d}\label{class_cjt___usuarios_a1796f4d44303d1592d191c21a6625e0d}} 
+\index{Cjt\_Usuarios@{Cjt\_Usuarios}!leer\_cjt\_usuario@{leer\_cjt\_usuario}}
+\index{leer\_cjt\_usuario@{leer\_cjt\_usuario}!Cjt\_Usuarios@{Cjt\_Usuarios}}
+\doxysubsubsection{\texorpdfstring{leer\_cjt\_usuario()}{leer\_cjt\_usuario()}}
+{\footnotesize\ttfamily void Cjt\+\_\+\+Usuarios\+::leer\+\_\+cjt\+\_\+usuario (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Lectura de un conjunto de usuarios. 
+
+\begin{DoxyPrecond}{Precondición}
+n $>$ 0 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El parámetro implícito contiene el conjunto de usuarios leídos del canal estándar de entrada 
+\end{DoxyPostcond}
+
+
+Definición en la línea 136 del archivo Cjt\+\_\+\+Usuarios.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{136                                          \{}
+\DoxyCodeLine{137    \textcolor{keywordtype}{int} i = 0;}
+\DoxyCodeLine{138    \textcolor{keywordflow}{while} (i < n) \{}
+\DoxyCodeLine{139       \mbox{\hyperlink{class_usuario}{Usuario}} User; }
+\DoxyCodeLine{140       \textcolor{keywordtype}{string} s;}
+\DoxyCodeLine{141       cin >> s; }
+\DoxyCodeLine{142       \mbox{\hyperlink{class_cjt___usuarios_afe5005a432d25260ec5b2fcbfb2cc3c7}{U}}.insert(make\_pair(s,User));}
+\DoxyCodeLine{143       ++i;}
+\DoxyCodeLine{144    \}}
+\DoxyCodeLine{145 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cjt___usuarios_a1c391b457c52780aa09fe805602b3a6f}\label{class_cjt___usuarios_a1c391b457c52780aa09fe805602b3a6f}} 
+\index{Cjt\_Usuarios@{Cjt\_Usuarios}!listar\_usuarios@{listar\_usuarios}}
+\index{listar\_usuarios@{listar\_usuarios}!Cjt\_Usuarios@{Cjt\_Usuarios}}
+\doxysubsubsection{\texorpdfstring{listar\_usuarios()}{listar\_usuarios()}}
+{\footnotesize\ttfamily void Cjt\+\_\+\+Usuarios\+::listar\+\_\+usuarios (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Escritura de un conjunto usuarios. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se ha escrito en el canal estándar de salida el usuario 
+\end{DoxyPostcond}
+
+
+Definición en la línea 147 del archivo Cjt\+\_\+\+Usuarios.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{147                                          \{}
+\DoxyCodeLine{148    map<string,Usuario>::const\_iterator it = \mbox{\hyperlink{class_cjt___usuarios_afe5005a432d25260ec5b2fcbfb2cc3c7}{U}}.begin();}
+\DoxyCodeLine{149    \textcolor{keywordflow}{while} (it != \mbox{\hyperlink{class_cjt___usuarios_afe5005a432d25260ec5b2fcbfb2cc3c7}{U}}.end()) \{}
+\DoxyCodeLine{150       cout <<it-\/>first << \textcolor{stringliteral}{"{}("{}} << it-\/>second.consultar\_envios() << \textcolor{stringliteral}{"{},"{}};}
+\DoxyCodeLine{151       cout << it-\/>second.consultar\_resueltos() << \textcolor{stringliteral}{"{},"{}};}
+\DoxyCodeLine{152       cout << it-\/>second.consultar\_envios\_problemas() << \textcolor{stringliteral}{"{},"{}};}
+\DoxyCodeLine{153       cout << it-\/>second.consultar\_curso\_inscrito() << \textcolor{stringliteral}{"{})"{}};}
+\DoxyCodeLine{154       cout << endl;}
+\DoxyCodeLine{155       ++it;}
+\DoxyCodeLine{156    \}}
+\DoxyCodeLine{157 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cjt___usuarios_aa5ad40873f489d46b5f0da13067ce848}\label{class_cjt___usuarios_aa5ad40873f489d46b5f0da13067ce848}} 
+\index{Cjt\_Usuarios@{Cjt\_Usuarios}!escribir\_usuario@{escribir\_usuario}}
+\index{escribir\_usuario@{escribir\_usuario}!Cjt\_Usuarios@{Cjt\_Usuarios}}
+\doxysubsubsection{\texorpdfstring{escribir\_usuario()}{escribir\_usuario()}}
+{\footnotesize\ttfamily void Cjt\+\_\+\+Usuarios\+::escribir\+\_\+usuario (\begin{DoxyParamCaption}\item[{string}]{p }\end{DoxyParamCaption}) const}
+
+
+
+Escritura de un usuario. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Si el usuario esta en el conjunto de usuarios del parametor implicito se imprimen sus atributos, de lo contrario se imprime un mensaje de error 
+\end{DoxyPostcond}
+
+
+Definición en la línea 160 del archivo Cjt\+\_\+\+Usuarios.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{160                                                   \{}
+\DoxyCodeLine{161    map<string,Usuario>::const\_iterator it = \mbox{\hyperlink{class_cjt___usuarios_afe5005a432d25260ec5b2fcbfb2cc3c7}{U}}.find(p);}
+\DoxyCodeLine{162    \textcolor{keywordflow}{if} (it != \mbox{\hyperlink{class_cjt___usuarios_afe5005a432d25260ec5b2fcbfb2cc3c7}{U}}.end()) \{}
+\DoxyCodeLine{163       cout <<it-\/>first << \textcolor{stringliteral}{"{}("{}} << it-\/>second.consultar\_envios() << \textcolor{stringliteral}{"{},"{}};}
+\DoxyCodeLine{164       cout << it-\/>second.consultar\_resueltos() << \textcolor{stringliteral}{"{},"{}};}
+\DoxyCodeLine{165       cout << it-\/>second.consultar\_envios\_problemas() << \textcolor{stringliteral}{"{},"{}};}
+\DoxyCodeLine{166       cout << it-\/>second.consultar\_curso\_inscrito() << \textcolor{stringliteral}{"{})"{}} << endl;}
+\DoxyCodeLine{167    \}}
+\DoxyCodeLine{168    \textcolor{keywordflow}{else} cout << \textcolor{stringliteral}{"{}error: el usuario no existe"{}} << endl;}
+\DoxyCodeLine{169 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cjt___usuarios_a5b72d574126657aa62676aeb76402988}\label{class_cjt___usuarios_a5b72d574126657aa62676aeb76402988}} 
+\index{Cjt\_Usuarios@{Cjt\_Usuarios}!imprimir\_problemas\_enviables@{imprimir\_problemas\_enviables}}
+\index{imprimir\_problemas\_enviables@{imprimir\_problemas\_enviables}!Cjt\_Usuarios@{Cjt\_Usuarios}}
+\doxysubsubsection{\texorpdfstring{imprimir\_problemas\_enviables()}{imprimir\_problemas\_enviables()}}
+{\footnotesize\ttfamily void Cjt\+\_\+\+Usuarios\+::imprimir\+\_\+problemas\+\_\+enviables (\begin{DoxyParamCaption}\item[{const string \&}]{u }\end{DoxyParamCaption}) const}
+
+
+
+Escritura de los problemas enviables del usuario p. 
+
+\begin{DoxyPrecond}{Precondición}
+Ciertos 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se ha imprimido en el canal estándar de salida los problemas enviables del usuario u, si el usuario u no existe o no esta inscrito en ningun curso se imprime un mensaje de error 
+\end{DoxyPostcond}
+
+
+Definición en la línea 172 del archivo Cjt\+\_\+\+Usuarios.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{172                                                                      \{}
+\DoxyCodeLine{173     map<string,Usuario>::const\_iterator it = \mbox{\hyperlink{class_cjt___usuarios_afe5005a432d25260ec5b2fcbfb2cc3c7}{U}}.find(u);}
+\DoxyCodeLine{174     \textcolor{keywordflow}{if} (it == \mbox{\hyperlink{class_cjt___usuarios_afe5005a432d25260ec5b2fcbfb2cc3c7}{U}}.end()) cout << \textcolor{stringliteral}{"{}error: el usuario no existe"{}} << endl;}
+\DoxyCodeLine{175     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (it-\/>second.consultar\_curso\_inscrito() == 0) }
+\DoxyCodeLine{176       cout  << \textcolor{stringliteral}{"{}error: usuario no inscrito en ningun curso"{}} << endl;}
+\DoxyCodeLine{177     \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{178       it-\/>second.escribir\_pe();}
+\DoxyCodeLine{179    \}}
+\DoxyCodeLine{180 }
+\DoxyCodeLine{181 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cjt___usuarios_ae4396f2cf7acb44868bb6fccf9f11256}\label{class_cjt___usuarios_ae4396f2cf7acb44868bb6fccf9f11256}} 
+\index{Cjt\_Usuarios@{Cjt\_Usuarios}!imprimir\_problemas\_resueltos@{imprimir\_problemas\_resueltos}}
+\index{imprimir\_problemas\_resueltos@{imprimir\_problemas\_resueltos}!Cjt\_Usuarios@{Cjt\_Usuarios}}
+\doxysubsubsection{\texorpdfstring{imprimir\_problemas\_resueltos()}{imprimir\_problemas\_resueltos()}}
+{\footnotesize\ttfamily void Cjt\+\_\+\+Usuarios\+::imprimir\+\_\+problemas\+\_\+resueltos (\begin{DoxyParamCaption}\item[{const string \&}]{u }\end{DoxyParamCaption}) const}
+
+
+
+Escritura de los problemas resueltos del usuario p. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se ha imprimido en el canal estándar de salida los problemas resueltos del usuario u si existe, de lo contrario se imprime un mensaje de error 
+\end{DoxyPostcond}
+
+
+Definición en la línea 183 del archivo Cjt\+\_\+\+Usuarios.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{183                                                                      \{}
+\DoxyCodeLine{184    map<string,Usuario>::const\_iterator it = \mbox{\hyperlink{class_cjt___usuarios_afe5005a432d25260ec5b2fcbfb2cc3c7}{U}}.find(u);}
+\DoxyCodeLine{185    \textcolor{keywordflow}{if} (it == \mbox{\hyperlink{class_cjt___usuarios_afe5005a432d25260ec5b2fcbfb2cc3c7}{U}}.end()) cout << \textcolor{stringliteral}{"{}error: el usuario no existe"{}} << endl;}
+\DoxyCodeLine{186    \textcolor{keywordflow}{else} it-\/>second.escribir\_pr();}
+\DoxyCodeLine{187 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{class_cjt___usuarios_afe5005a432d25260ec5b2fcbfb2cc3c7}\label{class_cjt___usuarios_afe5005a432d25260ec5b2fcbfb2cc3c7}} 
+\index{Cjt\_Usuarios@{Cjt\_Usuarios}!U@{U}}
+\index{U@{U}!Cjt\_Usuarios@{Cjt\_Usuarios}}
+\doxysubsubsection{\texorpdfstring{U}{U}}
+{\footnotesize\ttfamily map$<$string,\mbox{\hyperlink{class_usuario}{Usuario}}$>$ Cjt\+\_\+\+Usuarios\+::U\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Un map de usuarios con el nombre del usuario como key. 
+
+
+
+Definición en la línea 30 del archivo Cjt\+\_\+\+Usuarios.\+hh.
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_cjt___usuarios_8hh}{Cjt\+\_\+\+Usuarios.\+hh}}\item 
+\mbox{\hyperlink{_cjt___usuarios_8cc}{Cjt\+\_\+\+Usuarios.\+cc}}\end{DoxyCompactItemize}

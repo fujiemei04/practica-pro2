@@ -1,0 +1,377 @@
+\hypertarget{class_cjt___problemas}{}\doxysection{Referencia de la Clase Cjt\+\_\+\+Problemas}
+\label{class_cjt___problemas}\index{Cjt\_Problemas@{Cjt\_Problemas}}
+
+
+Representa la información y las operaciones asociadas a un conjuto de problemas.  
+
+
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_cjt___problemas_a28155f8a26cf7d539b9ca8eba36dd584}{Cjt\+\_\+\+Problemas}} ()
+\begin{DoxyCompactList}\small\item\em Constructora por defecto. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_cjt___problemas_a5b3f45ca9974f34eb724f887b4b66d20}{buscar\+\_\+problema}} (string p) const
+\begin{DoxyCompactList}\small\item\em Busca un problema p. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_cjt___problemas_ab25efa417a82edaa46390b2ed615284e}{consultar\+\_\+envios\+\_\+tot}} (const string \&p) const
+\begin{DoxyCompactList}\small\item\em Consulta los envios totales del parametro implicito. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_cjt___problemas_acdd867ef119eaefdcca42f669705062f}{consultar\+\_\+envios\+\_\+corr}} (const string \&p) const
+\begin{DoxyCompactList}\small\item\em Consulta los envios correctos del parametro implicito. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_cjt___problemas_a700c0d0cfb4638e1877e62b6a3b85873}{nuevo\+\_\+problema}} (string p)
+\begin{DoxyCompactList}\small\item\em Añade un nuevo problema. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cjt___problemas_a4f468bfddfb6d1d9a82fec7c55d8b2cf}{modf\+\_\+envios\+\_\+corr}} (const string \&p, int c)
+\begin{DoxyCompactList}\small\item\em Modifica el numero de envios correctos a un problema. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cjt___problemas_af6bcdd108edae41aac2aac837cd193ea}{modf\+\_\+envios\+\_\+tot}} (const string \&p, int c)
+\begin{DoxyCompactList}\small\item\em Modifica el numero de envios correctos a un problema. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cjt___problemas_aca9403e07f153d44d96d5f5c44c0d0f5}{leer\+\_\+cjt\+\_\+problemas}} (int n)
+\begin{DoxyCompactList}\small\item\em Lectura de un conjunto de problemas. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cjt___problemas_a14de3f269a5367c03aef37e4d0d1a744}{listar\+\_\+problemas}} () const
+\begin{DoxyCompactList}\small\item\em Se listan los problemas de la coleccion. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cjt___problemas_ad1c9154b00c59702c0b7c312e3f02baa}{escribir\+\_\+problema}} (string p) const
+\begin{DoxyCompactList}\small\item\em Se escribe un problema. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+map$<$ string, \mbox{\hyperlink{class_problema}{Problema}} $>$ \mbox{\hyperlink{class_cjt___problemas_a3b60ae81a5f3e54e2f7a4d4268bf1efe}{Problemas}}
+\begin{DoxyCompactList}\small\item\em Mapa de problemas donde el key es el nombre del problema. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Representa la información y las operaciones asociadas a un conjuto de problemas. 
+
+Sus operaciones son las consultoras buscar problema el cual busca si existe un problema en el conjunto, consultar envios correctos y totales de un problema. Las modificadoras nuevo problema, modificar envios correctos y totales y la lectura y escriptura de un conjunto de problemas o un problema en especifico. 
+
+Definición en la línea 27 del archivo Cjt\+\_\+\+Problemas.\+hh.
+
+
+
+\doxysubsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{class_cjt___problemas_a28155f8a26cf7d539b9ca8eba36dd584}\label{class_cjt___problemas_a28155f8a26cf7d539b9ca8eba36dd584}} 
+\index{Cjt\_Problemas@{Cjt\_Problemas}!Cjt\_Problemas@{Cjt\_Problemas}}
+\index{Cjt\_Problemas@{Cjt\_Problemas}!Cjt\_Problemas@{Cjt\_Problemas}}
+\doxysubsubsection{\texorpdfstring{Cjt\_Problemas()}{Cjt\_Problemas()}}
+{\footnotesize\ttfamily Cjt\+\_\+\+Problemas\+::\+Cjt\+\_\+\+Problemas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructora por defecto. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se ha creado un conjunto de problemas vacio 
+\end{DoxyPostcond}
+
+
+Definición en la línea 12 del archivo Cjt\+\_\+\+Problemas.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{12                              \{}
+\DoxyCodeLine{13 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_cjt___problemas_a5b3f45ca9974f34eb724f887b4b66d20}\label{class_cjt___problemas_a5b3f45ca9974f34eb724f887b4b66d20}} 
+\index{Cjt\_Problemas@{Cjt\_Problemas}!buscar\_problema@{buscar\_problema}}
+\index{buscar\_problema@{buscar\_problema}!Cjt\_Problemas@{Cjt\_Problemas}}
+\doxysubsubsection{\texorpdfstring{buscar\_problema()}{buscar\_problema()}}
+{\footnotesize\ttfamily bool Cjt\+\_\+\+Problemas\+::buscar\+\_\+problema (\begin{DoxyParamCaption}\item[{string}]{p }\end{DoxyParamCaption}) const}
+
+
+
+Busca un problema p. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es true si el parámetro implícito contiene el problema p, falso contrariamente 
+\end{DoxyPostcond}
+
+
+Definición en la línea 15 del archivo Cjt\+\_\+\+Problemas.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{15                                                   \{}
+\DoxyCodeLine{16     map<string,Problema>::const\_iterator it = \mbox{\hyperlink{class_cjt___problemas_a3b60ae81a5f3e54e2f7a4d4268bf1efe}{Problemas}}.find(p);}
+\DoxyCodeLine{17     \textcolor{keywordflow}{return} it != \mbox{\hyperlink{class_cjt___problemas_a3b60ae81a5f3e54e2f7a4d4268bf1efe}{Problemas}}.end();}
+\DoxyCodeLine{18 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cjt___problemas_ab25efa417a82edaa46390b2ed615284e}\label{class_cjt___problemas_ab25efa417a82edaa46390b2ed615284e}} 
+\index{Cjt\_Problemas@{Cjt\_Problemas}!consultar\_envios\_tot@{consultar\_envios\_tot}}
+\index{consultar\_envios\_tot@{consultar\_envios\_tot}!Cjt\_Problemas@{Cjt\_Problemas}}
+\doxysubsubsection{\texorpdfstring{consultar\_envios\_tot()}{consultar\_envios\_tot()}}
+{\footnotesize\ttfamily int Cjt\+\_\+\+Problemas\+::consultar\+\_\+envios\+\_\+tot (\begin{DoxyParamCaption}\item[{const string \&}]{p }\end{DoxyParamCaption}) const}
+
+
+
+Consulta los envios totales del parametro implicito. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es los envios totales del parametro implicito 
+\end{DoxyPostcond}
+
+
+Definición en la línea 20 del archivo Cjt\+\_\+\+Problemas.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{20                                                              \{}
+\DoxyCodeLine{21    map<string,Problema>::const\_iterator it = \mbox{\hyperlink{class_cjt___problemas_a3b60ae81a5f3e54e2f7a4d4268bf1efe}{Problemas}}.find(p);}
+\DoxyCodeLine{22    \textcolor{keywordflow}{return} it-\/>second.consultar\_envios\_totales();}
+\DoxyCodeLine{23 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cjt___problemas_acdd867ef119eaefdcca42f669705062f}\label{class_cjt___problemas_acdd867ef119eaefdcca42f669705062f}} 
+\index{Cjt\_Problemas@{Cjt\_Problemas}!consultar\_envios\_corr@{consultar\_envios\_corr}}
+\index{consultar\_envios\_corr@{consultar\_envios\_corr}!Cjt\_Problemas@{Cjt\_Problemas}}
+\doxysubsubsection{\texorpdfstring{consultar\_envios\_corr()}{consultar\_envios\_corr()}}
+{\footnotesize\ttfamily int Cjt\+\_\+\+Problemas\+::consultar\+\_\+envios\+\_\+corr (\begin{DoxyParamCaption}\item[{const string \&}]{p }\end{DoxyParamCaption}) const}
+
+
+
+Consulta los envios correctos del parametro implicito. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es los envios correctos del parametro implicito 
+\end{DoxyPostcond}
+
+
+Definición en la línea 25 del archivo Cjt\+\_\+\+Problemas.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{25                                                               \{}
+\DoxyCodeLine{26    map<string,Problema>::const\_iterator it = \mbox{\hyperlink{class_cjt___problemas_a3b60ae81a5f3e54e2f7a4d4268bf1efe}{Problemas}}.find(p);}
+\DoxyCodeLine{27    \textcolor{keywordflow}{return} it-\/>second.consultar\_correctos();}
+\DoxyCodeLine{28 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cjt___problemas_a700c0d0cfb4638e1877e62b6a3b85873}\label{class_cjt___problemas_a700c0d0cfb4638e1877e62b6a3b85873}} 
+\index{Cjt\_Problemas@{Cjt\_Problemas}!nuevo\_problema@{nuevo\_problema}}
+\index{nuevo\_problema@{nuevo\_problema}!Cjt\_Problemas@{Cjt\_Problemas}}
+\doxysubsubsection{\texorpdfstring{nuevo\_problema()}{nuevo\_problema()}}
+{\footnotesize\ttfamily int Cjt\+\_\+\+Problemas\+::nuevo\+\_\+problema (\begin{DoxyParamCaption}\item[{string}]{p }\end{DoxyParamCaption})}
+
+
+
+Añade un nuevo problema. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Si p ya existia, devuelve un -\/1, contrariamente imprime el número total de problemas despues de añadir p al parametro implicito 
+\end{DoxyPostcond}
+
+
+Definición en la línea 30 del archivo Cjt\+\_\+\+Problemas.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{30                                           \{}
+\DoxyCodeLine{31     map<string,Problema>::iterator it = \mbox{\hyperlink{class_cjt___problemas_a3b60ae81a5f3e54e2f7a4d4268bf1efe}{Problemas}}.find(p);}
+\DoxyCodeLine{32     \textcolor{keywordflow}{if} (it == \mbox{\hyperlink{class_cjt___problemas_a3b60ae81a5f3e54e2f7a4d4268bf1efe}{Problemas}}.end()) \{}
+\DoxyCodeLine{33         \mbox{\hyperlink{class_problema}{Problema}} P;}
+\DoxyCodeLine{34         \mbox{\hyperlink{class_cjt___problemas_a3b60ae81a5f3e54e2f7a4d4268bf1efe}{Problemas}}.insert(make\_pair(p,P));}
+\DoxyCodeLine{35         \textcolor{keywordflow}{return} \mbox{\hyperlink{class_cjt___problemas_a3b60ae81a5f3e54e2f7a4d4268bf1efe}{Problemas}}.size();}
+\DoxyCodeLine{36     \}}
+\DoxyCodeLine{37     \textcolor{keywordflow}{return} -\/1;}
+\DoxyCodeLine{38 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cjt___problemas_a4f468bfddfb6d1d9a82fec7c55d8b2cf}\label{class_cjt___problemas_a4f468bfddfb6d1d9a82fec7c55d8b2cf}} 
+\index{Cjt\_Problemas@{Cjt\_Problemas}!modf\_envios\_corr@{modf\_envios\_corr}}
+\index{modf\_envios\_corr@{modf\_envios\_corr}!Cjt\_Problemas@{Cjt\_Problemas}}
+\doxysubsubsection{\texorpdfstring{modf\_envios\_corr()}{modf\_envios\_corr()}}
+{\footnotesize\ttfamily void Cjt\+\_\+\+Problemas\+::modf\+\_\+envios\+\_\+corr (\begin{DoxyParamCaption}\item[{const string \&}]{p,  }\item[{int}]{c }\end{DoxyParamCaption})}
+
+
+
+Modifica el numero de envios correctos a un problema. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El numero de envios correctos del problema p del parametro implicito pasa a ser c 
+\end{DoxyPostcond}
+
+
+Definición en la línea 40 del archivo Cjt\+\_\+\+Problemas.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{40                                                           \{}
+\DoxyCodeLine{41     map<string,Problema>::iterator it = \mbox{\hyperlink{class_cjt___problemas_a3b60ae81a5f3e54e2f7a4d4268bf1efe}{Problemas}}.find(p);}
+\DoxyCodeLine{42     it-\/>second.modificar\_envios\_corr(c);}
+\DoxyCodeLine{43 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cjt___problemas_af6bcdd108edae41aac2aac837cd193ea}\label{class_cjt___problemas_af6bcdd108edae41aac2aac837cd193ea}} 
+\index{Cjt\_Problemas@{Cjt\_Problemas}!modf\_envios\_tot@{modf\_envios\_tot}}
+\index{modf\_envios\_tot@{modf\_envios\_tot}!Cjt\_Problemas@{Cjt\_Problemas}}
+\doxysubsubsection{\texorpdfstring{modf\_envios\_tot()}{modf\_envios\_tot()}}
+{\footnotesize\ttfamily void Cjt\+\_\+\+Problemas\+::modf\+\_\+envios\+\_\+tot (\begin{DoxyParamCaption}\item[{const string \&}]{p,  }\item[{int}]{c }\end{DoxyParamCaption})}
+
+
+
+Modifica el numero de envios correctos a un problema. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El numero de envios totales del problema p del parametro implicito pasa a ser c 
+\end{DoxyPostcond}
+
+
+Definición en la línea 45 del archivo Cjt\+\_\+\+Problemas.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{45                                                          \{}
+\DoxyCodeLine{46     map<string,Problema>::iterator it = \mbox{\hyperlink{class_cjt___problemas_a3b60ae81a5f3e54e2f7a4d4268bf1efe}{Problemas}}.find(p);}
+\DoxyCodeLine{47     it-\/>second.modificar\_envios\_tot(c);}
+\DoxyCodeLine{48 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cjt___problemas_aca9403e07f153d44d96d5f5c44c0d0f5}\label{class_cjt___problemas_aca9403e07f153d44d96d5f5c44c0d0f5}} 
+\index{Cjt\_Problemas@{Cjt\_Problemas}!leer\_cjt\_problemas@{leer\_cjt\_problemas}}
+\index{leer\_cjt\_problemas@{leer\_cjt\_problemas}!Cjt\_Problemas@{Cjt\_Problemas}}
+\doxysubsubsection{\texorpdfstring{leer\_cjt\_problemas()}{leer\_cjt\_problemas()}}
+{\footnotesize\ttfamily void Cjt\+\_\+\+Problemas\+::leer\+\_\+cjt\+\_\+problemas (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Lectura de un conjunto de problemas. 
+
+\begin{DoxyPrecond}{Precondición}
+n $>$ 0 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El parámetro implícito pasa a tener los atributos leídos del canal estándar de entrada 
+\end{DoxyPostcond}
+
+
+Definición en la línea 50 del archivo Cjt\+\_\+\+Problemas.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{50                                             \{}
+\DoxyCodeLine{51     \textcolor{keywordtype}{int} i = 0;}
+\DoxyCodeLine{52     \textcolor{keywordflow}{while} (i < n) \{}
+\DoxyCodeLine{53        \mbox{\hyperlink{class_problema}{Problema}} P;  }
+\DoxyCodeLine{54        \textcolor{keywordtype}{string} p;}
+\DoxyCodeLine{55        cin >> p;}
+\DoxyCodeLine{56        \mbox{\hyperlink{class_cjt___problemas_a3b60ae81a5f3e54e2f7a4d4268bf1efe}{Problemas}}.insert(make\_pair(p,P));}
+\DoxyCodeLine{57        ++i;}
+\DoxyCodeLine{58     \} }
+\DoxyCodeLine{59 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cjt___problemas_a14de3f269a5367c03aef37e4d0d1a744}\label{class_cjt___problemas_a14de3f269a5367c03aef37e4d0d1a744}} 
+\index{Cjt\_Problemas@{Cjt\_Problemas}!listar\_problemas@{listar\_problemas}}
+\index{listar\_problemas@{listar\_problemas}!Cjt\_Problemas@{Cjt\_Problemas}}
+\doxysubsubsection{\texorpdfstring{listar\_problemas()}{listar\_problemas()}}
+{\footnotesize\ttfamily void Cjt\+\_\+\+Problemas\+::listar\+\_\+problemas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Se listan los problemas de la coleccion. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se listan los problemas de la colección, indicando para cada problema el número t de envíos totales y el número e de envíos con éxito a dicho problema. Se escriben ordenados con el ratio (e+1)/(t+1),en caso de empate por orden lexicografico 
+\end{DoxyPostcond}
+
+
+Definición en la línea 61 del archivo Cjt\+\_\+\+Problemas.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{61                                            \{}
+\DoxyCodeLine{62     map<string,Problema>::const\_iterator it;}
+\DoxyCodeLine{63     vector<pair<string,Problema> > vecprob;}
+\DoxyCodeLine{64     \textcolor{keywordflow}{for} (it = \mbox{\hyperlink{class_cjt___problemas_a3b60ae81a5f3e54e2f7a4d4268bf1efe}{Problemas}}.begin();it != \mbox{\hyperlink{class_cjt___problemas_a3b60ae81a5f3e54e2f7a4d4268bf1efe}{Problemas}}.end();++it) \{}
+\DoxyCodeLine{65       vecprob.push\_back(make\_pair(it-\/>first,it-\/>second));}
+\DoxyCodeLine{66     \}}
+\DoxyCodeLine{67     sort(vecprob.begin(),vecprob.end(),\mbox{\hyperlink{_cjt___problemas_8cc_a792beb9c34abc600047cc8daa5a270f9}{sort\_ratio}});}
+\DoxyCodeLine{68     \textcolor{keywordtype}{int} n = vecprob.size();}
+\DoxyCodeLine{69     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0;i < n;++i) \{}
+\DoxyCodeLine{70         cout << vecprob[i].first << \textcolor{stringliteral}{"{}("{}} << vecprob[i].second.consultar\_envios\_totales() << \textcolor{stringliteral}{"{},"{}};}
+\DoxyCodeLine{71         cout << vecprob[i].second.consultar\_correctos() << \textcolor{stringliteral}{"{},"{}};}
+\DoxyCodeLine{72         cout << vecprob[i].second.consultar\_ratio() << \textcolor{stringliteral}{"{})"{}} << endl;}
+\DoxyCodeLine{73     \}}
+\DoxyCodeLine{74 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cjt___problemas_ad1c9154b00c59702c0b7c312e3f02baa}\label{class_cjt___problemas_ad1c9154b00c59702c0b7c312e3f02baa}} 
+\index{Cjt\_Problemas@{Cjt\_Problemas}!escribir\_problema@{escribir\_problema}}
+\index{escribir\_problema@{escribir\_problema}!Cjt\_Problemas@{Cjt\_Problemas}}
+\doxysubsubsection{\texorpdfstring{escribir\_problema()}{escribir\_problema()}}
+{\footnotesize\ttfamily void Cjt\+\_\+\+Problemas\+::escribir\+\_\+problema (\begin{DoxyParamCaption}\item[{string}]{p }\end{DoxyParamCaption}) const}
+
+
+
+Se escribe un problema. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se imprime por pantalla los atributos de un problema si existe en el conjunto 
+\end{DoxyPostcond}
+
+
+Definición en la línea 78 del archivo Cjt\+\_\+\+Problemas.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{78                                                    \{}
+\DoxyCodeLine{79     map<string,Problema>::const\_iterator it = \mbox{\hyperlink{class_cjt___problemas_a3b60ae81a5f3e54e2f7a4d4268bf1efe}{Problemas}}.find(p);}
+\DoxyCodeLine{80     \textcolor{keywordflow}{if} (it != \mbox{\hyperlink{class_cjt___problemas_a3b60ae81a5f3e54e2f7a4d4268bf1efe}{Problemas}}.end()) \{}
+\DoxyCodeLine{81         cout << it-\/>first << \textcolor{stringliteral}{"{}("{}} << it-\/>second.consultar\_envios\_totales() <<\textcolor{stringliteral}{"{},"{}};}
+\DoxyCodeLine{82         cout << it-\/>second.consultar\_correctos() << \textcolor{stringliteral}{"{},"{}};}
+\DoxyCodeLine{83         cout << it-\/>second.consultar\_ratio() << \textcolor{stringliteral}{"{})"{}} << endl;}
+\DoxyCodeLine{84     \}}
+\DoxyCodeLine{85     \textcolor{keywordflow}{else} cout << \textcolor{stringliteral}{"{}error: el problema no existe"{}}  << endl;}
+\DoxyCodeLine{86 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{class_cjt___problemas_a3b60ae81a5f3e54e2f7a4d4268bf1efe}\label{class_cjt___problemas_a3b60ae81a5f3e54e2f7a4d4268bf1efe}} 
+\index{Cjt\_Problemas@{Cjt\_Problemas}!Problemas@{Problemas}}
+\index{Problemas@{Problemas}!Cjt\_Problemas@{Cjt\_Problemas}}
+\doxysubsubsection{\texorpdfstring{Problemas}{Problemas}}
+{\footnotesize\ttfamily map$<$string,\mbox{\hyperlink{class_problema}{Problema}}$>$ Cjt\+\_\+\+Problemas\+::\+Problemas\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Mapa de problemas donde el key es el nombre del problema. 
+
+
+
+Definición en la línea 32 del archivo Cjt\+\_\+\+Problemas.\+hh.
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_cjt___problemas_8hh}{Cjt\+\_\+\+Problemas.\+hh}}\item 
+\mbox{\hyperlink{_cjt___problemas_8cc}{Cjt\+\_\+\+Problemas.\+cc}}\end{DoxyCompactItemize}

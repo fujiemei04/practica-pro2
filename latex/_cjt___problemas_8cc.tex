@@ -1,0 +1,45 @@
+\hypertarget{_cjt___problemas_8cc}{}\doxysection{Referencia del Archivo Cjt\+\_\+\+Problemas.\+cc}
+\label{_cjt___problemas_8cc}\index{Cjt\_Problemas.cc@{Cjt\_Problemas.cc}}
+
+
+Código de la clase \mbox{\hyperlink{class_cjt___problemas}{Cjt\+\_\+\+Problemas}}.  
+
+
+Dependencia gráfica adjunta para Cjt\+\_\+\+Problemas.\+cc\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{_cjt___problemas_8cc__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{_cjt___problemas_8cc_a792beb9c34abc600047cc8daa5a270f9}{sort\+\_\+ratio}} (const pair$<$ string, \mbox{\hyperlink{class_problema}{Problema}} $>$ \&a, const pair$<$ string, \mbox{\hyperlink{class_problema}{Problema}} $>$ \&b)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Código de la clase \mbox{\hyperlink{class_cjt___problemas}{Cjt\+\_\+\+Problemas}}. 
+
+
+
+\doxysubsection{Documentación de las funciones}
+\mbox{\Hypertarget{_cjt___problemas_8cc_a792beb9c34abc600047cc8daa5a270f9}\label{_cjt___problemas_8cc_a792beb9c34abc600047cc8daa5a270f9}} 
+\index{Cjt\_Problemas.cc@{Cjt\_Problemas.cc}!sort\_ratio@{sort\_ratio}}
+\index{sort\_ratio@{sort\_ratio}!Cjt\_Problemas.cc@{Cjt\_Problemas.cc}}
+\doxysubsubsection{\texorpdfstring{sort\_ratio()}{sort\_ratio()}}
+{\footnotesize\ttfamily bool sort\+\_\+ratio (\begin{DoxyParamCaption}\item[{const pair$<$ string, \mbox{\hyperlink{class_problema}{Problema}} $>$ \&}]{a,  }\item[{const pair$<$ string, \mbox{\hyperlink{class_problema}{Problema}} $>$ \&}]{b }\end{DoxyParamCaption})}
+
+
+
+Definición en la línea 7 del archivo Cjt\+\_\+\+Problemas.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{7                                                                                \{}
+\DoxyCodeLine{8     \textcolor{keywordflow}{if} (a.second.consultar\_ratio() != b.second.consultar\_ratio()) \textcolor{keywordflow}{return} a.second.consultar\_ratio() < b.second.consultar\_ratio();}
+\DoxyCodeLine{9     \textcolor{keywordflow}{return} a.first < b.first;}
+\DoxyCodeLine{10 \}}
+
+\end{DoxyCode}

@@ -1,0 +1,244 @@
+\hypertarget{class_problema}{}\doxysection{Referencia de la Clase Problema}
+\label{class_problema}\index{Problema@{Problema}}
+
+
+Representa la información y las operaciones asociadas a un problema.  
+
+
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_problema_a9d81af5f3f42a1b4354ad8f3c022fca3}{Problema}} ()
+\begin{DoxyCompactList}\small\item\em Constructora por defecto. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_problema_a71df943daed334275ea96cd47802c49f}{consultar\+\_\+envios\+\_\+totales}} () const
+\begin{DoxyCompactList}\small\item\em Consulta los envios totales a un problema. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_problema_a279edda2e0a6a7833039afd5ab025ae6}{consultar\+\_\+correctos}} () const
+\begin{DoxyCompactList}\small\item\em Consulta los envios correctos a un problema. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_problema_aea87780415601a5d3ffd18f613492c56}{consultar\+\_\+ratio}} () const
+\begin{DoxyCompactList}\small\item\em Consulta el ratio. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_problema_a2eafc66261e48d908f99032027c4546b}{modificar\+\_\+envios\+\_\+corr}} (int c)
+\begin{DoxyCompactList}\small\item\em Modifica el numero de envios correctos del parametro implicito. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_problema_a0505d4630904253e74e5730f35ac968c}{modificar\+\_\+envios\+\_\+tot}} (int c)
+\begin{DoxyCompactList}\small\item\em Modifica el numero de envios totales del parametro implicito. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_problema_abaee308b1ebcc3c1b3620fffc33a4196}{envios\+\_\+totales}}
+\begin{DoxyCompactList}\small\item\em Numero de envios de este problema. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_problema_a086bcfe12a44df13cb5312471fbfa467}{envios\+\_\+correctos}}
+\begin{DoxyCompactList}\small\item\em Numero de envios correctos a este problema. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Representa la información y las operaciones asociadas a un problema. 
+
+Sus operaciones son las consultoras de cuantos envios se han a dicho problema y cuantos de estos han sido calificados como correctos, la consultora del ratio (envios totales+1)/(envios\+\_\+correctos+1), y las modificadoras de envio correcto y totales. 
+
+Definición en la línea 21 del archivo Problema.\+hh.
+
+
+
+\doxysubsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{class_problema_a9d81af5f3f42a1b4354ad8f3c022fca3}\label{class_problema_a9d81af5f3f42a1b4354ad8f3c022fca3}} 
+\index{Problema@{Problema}!Problema@{Problema}}
+\index{Problema@{Problema}!Problema@{Problema}}
+\doxysubsubsection{\texorpdfstring{Problema()}{Problema()}}
+{\footnotesize\ttfamily Problema\+::\+Problema (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructora por defecto. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es una problema con envios totales y correctos inicializados a 0. 
+\end{DoxyPostcond}
+
+
+Definición en la línea 8 del archivo Problema.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{8                    \{}
+\DoxyCodeLine{9     \mbox{\hyperlink{class_problema_a086bcfe12a44df13cb5312471fbfa467}{envios\_correctos}} = 0;}
+\DoxyCodeLine{10     \mbox{\hyperlink{class_problema_abaee308b1ebcc3c1b3620fffc33a4196}{envios\_totales}} = 0;}
+\DoxyCodeLine{11 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_problema_a71df943daed334275ea96cd47802c49f}\label{class_problema_a71df943daed334275ea96cd47802c49f}} 
+\index{Problema@{Problema}!consultar\_envios\_totales@{consultar\_envios\_totales}}
+\index{consultar\_envios\_totales@{consultar\_envios\_totales}!Problema@{Problema}}
+\doxysubsubsection{\texorpdfstring{consultar\_envios\_totales()}{consultar\_envios\_totales()}}
+{\footnotesize\ttfamily int Problema\+::consultar\+\_\+envios\+\_\+totales (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Consulta los envios totales a un problema. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es el atributo envios\+\_\+totales del parametro implicito 
+\end{DoxyPostcond}
+
+
+Definición en la línea 14 del archivo Problema.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{14                                              \{}
+\DoxyCodeLine{15     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_problema_abaee308b1ebcc3c1b3620fffc33a4196}{envios\_totales}};}
+\DoxyCodeLine{16 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_problema_a279edda2e0a6a7833039afd5ab025ae6}\label{class_problema_a279edda2e0a6a7833039afd5ab025ae6}} 
+\index{Problema@{Problema}!consultar\_correctos@{consultar\_correctos}}
+\index{consultar\_correctos@{consultar\_correctos}!Problema@{Problema}}
+\doxysubsubsection{\texorpdfstring{consultar\_correctos()}{consultar\_correctos()}}
+{\footnotesize\ttfamily int Problema\+::consultar\+\_\+correctos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Consulta los envios correctos a un problema. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es el atributo envios\+\_\+correctos del parametro implicito 
+\end{DoxyPostcond}
+
+
+Definición en la línea 18 del archivo Problema.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18                                         \{}
+\DoxyCodeLine{19     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_problema_a086bcfe12a44df13cb5312471fbfa467}{envios\_correctos}};}
+\DoxyCodeLine{20 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_problema_aea87780415601a5d3ffd18f613492c56}\label{class_problema_aea87780415601a5d3ffd18f613492c56}} 
+\index{Problema@{Problema}!consultar\_ratio@{consultar\_ratio}}
+\index{consultar\_ratio@{consultar\_ratio}!Problema@{Problema}}
+\doxysubsubsection{\texorpdfstring{consultar\_ratio()}{consultar\_ratio()}}
+{\footnotesize\ttfamily double Problema\+::consultar\+\_\+ratio (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Consulta el ratio. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es el ratio (envios\+\_\+totales+1)/(envios\+\_\+correctos+1) 
+\end{DoxyPostcond}
+
+
+Definición en la línea 23 del archivo Problema.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{23                                        \{}
+\DoxyCodeLine{24     \textcolor{keywordflow}{return} double((\mbox{\hyperlink{class_problema_abaee308b1ebcc3c1b3620fffc33a4196}{envios\_totales}}+1))/(\mbox{\hyperlink{class_problema_a086bcfe12a44df13cb5312471fbfa467}{envios\_correctos}}+1);}
+\DoxyCodeLine{25 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_problema_a2eafc66261e48d908f99032027c4546b}\label{class_problema_a2eafc66261e48d908f99032027c4546b}} 
+\index{Problema@{Problema}!modificar\_envios\_corr@{modificar\_envios\_corr}}
+\index{modificar\_envios\_corr@{modificar\_envios\_corr}!Problema@{Problema}}
+\doxysubsubsection{\texorpdfstring{modificar\_envios\_corr()}{modificar\_envios\_corr()}}
+{\footnotesize\ttfamily void Problema\+::modificar\+\_\+envios\+\_\+corr (\begin{DoxyParamCaption}\item[{int}]{c }\end{DoxyParamCaption})}
+
+
+
+Modifica el numero de envios correctos del parametro implicito. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El numero de envios correctos del parametro implicito pasa a ser c 
+\end{DoxyPostcond}
+
+
+Definición en la línea 27 del archivo Problema.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{27                                           \{}
+\DoxyCodeLine{28     \mbox{\hyperlink{class_problema_a086bcfe12a44df13cb5312471fbfa467}{envios\_correctos}} = c;}
+\DoxyCodeLine{29 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_problema_a0505d4630904253e74e5730f35ac968c}\label{class_problema_a0505d4630904253e74e5730f35ac968c}} 
+\index{Problema@{Problema}!modificar\_envios\_tot@{modificar\_envios\_tot}}
+\index{modificar\_envios\_tot@{modificar\_envios\_tot}!Problema@{Problema}}
+\doxysubsubsection{\texorpdfstring{modificar\_envios\_tot()}{modificar\_envios\_tot()}}
+{\footnotesize\ttfamily void Problema\+::modificar\+\_\+envios\+\_\+tot (\begin{DoxyParamCaption}\item[{int}]{c }\end{DoxyParamCaption})}
+
+
+
+Modifica el numero de envios totales del parametro implicito. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El numero de envios totales del parametro implicito pasa a ser c 
+\end{DoxyPostcond}
+
+
+Definición en la línea 31 del archivo Problema.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{31                                          \{}
+\DoxyCodeLine{32     \mbox{\hyperlink{class_problema_abaee308b1ebcc3c1b3620fffc33a4196}{envios\_totales}} = c;}
+\DoxyCodeLine{33 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{class_problema_abaee308b1ebcc3c1b3620fffc33a4196}\label{class_problema_abaee308b1ebcc3c1b3620fffc33a4196}} 
+\index{Problema@{Problema}!envios\_totales@{envios\_totales}}
+\index{envios\_totales@{envios\_totales}!Problema@{Problema}}
+\doxysubsubsection{\texorpdfstring{envios\_totales}{envios\_totales}}
+{\footnotesize\ttfamily int Problema\+::envios\+\_\+totales\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Numero de envios de este problema. 
+
+
+
+Definición en la línea 26 del archivo Problema.\+hh.
+
+\mbox{\Hypertarget{class_problema_a086bcfe12a44df13cb5312471fbfa467}\label{class_problema_a086bcfe12a44df13cb5312471fbfa467}} 
+\index{Problema@{Problema}!envios\_correctos@{envios\_correctos}}
+\index{envios\_correctos@{envios\_correctos}!Problema@{Problema}}
+\doxysubsubsection{\texorpdfstring{envios\_correctos}{envios\_correctos}}
+{\footnotesize\ttfamily int Problema\+::envios\+\_\+correctos\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Numero de envios correctos a este problema. 
+
+
+
+Definición en la línea 29 del archivo Problema.\+hh.
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_problema_8hh}{Problema.\+hh}}\item 
+\mbox{\hyperlink{_problema_8cc}{Problema.\+cc}}\end{DoxyCompactItemize}

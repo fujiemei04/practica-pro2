@@ -1,0 +1,673 @@
+205
+I01 I02 I03 I04 I05
+C01 C02 C03 C04 C05
+B01 B02 B03 B04 B05 B06 B07 B08 B09 B10 B11 B12 B13 B14 B15
+S01 S02 S03 S04 S05 S06 S07 S08 S09 S10 S11 S12 S13 S14 S15
+F01 F02 F03 F04 F05 F06 F07 F08 F09 F10
+R01 R02 R03 R04 R05 R06 R07 R08 R09 R10
+V01 V02 V03 V04 V05 V06 V07 V08 V09 V10 V11 V12 V13 V14 V15
+M01 M02 M03 M04 M05 M06 M07 M08 M09
+ST1 ST2 ST3 ST4 ST5 ST6 ST7 ST8 ST9 ST10
+SP1
+A101 A102 A103 A104 A105 A106 A107 A108 A109 A110
+PP01 PP02 PP03 PP04 PP05
+P01 P02 P03 P04 P05
+Q01 Q02 Q03 Q04 Q05
+L01 L02 L03 L04 L05
+AB01 AB02 AB03 AB04 AB05 AB06 AB07 AB08 AB09 AB10
+MS01 MS02 MS03 MS04 MS05 MS06 MS07 MS08 MS09 MS10
+P101 P102 P103 P104 P105
+P201 P202 P203 P204 P205
+AN01 AN02 AN03 AN04 AN05
+DC01 DC02 DC03 DC04 DC05
+G01 G02 G03 G04 G05 G06 G07 G08 G09 G10
+G11 G12 G13 G14 G15 G16 G17 G18 G19 G20
+SH01 SH02 SH03 SH04 SH05
+A201 A202 A203 A204 A205 A206 A207 A208 A209 A210
+EH01 EH02 EH03 EH04 EH05
+
+
+26
+Introduccion I01 I02 I03 0 0 I04 0 0 I05 0 0
+Condicionales C01 C02 C03 C04 0 0 C05 0 0 0 0
+Bucles B01 B02 B03 B04 0 0 B05 0 0 B06 B07 0 0 B08 0 0 B09 B10 B11 0 0 B12 0 0 B13 B14 0 0 B15 0 0
+Secuencias S01 S02 S03 S04 S05 S06 S07 S08 0 0 0 0 0 0 0 0 S09 0 S10 0 S11 0 S12 0 S13 S14 0 0 S15 0 0
+Funciones  F01 F02 F03 F04 F05 F06 F07 F08 F09 F10 0 0 0 0 0 0 0 0 0 0 0
+Recursividad R01 R02 R03 R04 R05 0 0 R06 0 0 R07 0 0 R08 0 0 R09 0 R10 0 0
+Vectores V01 V02 V03 V04 V05 V06 V07 V08 V09 V10 V11 V12 V13 V14 0 0 V15 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+Matrices M01 M02 M03 M04 0 0 M05 0 0 M06 M07 0 0 M08 0 0 M09 0 0
+Structs ST1 ST2 ST3 ST4 ST5 ST6 0 0 ST7 0 0 ST8 0 0 ST9 0 0 ST10 0 0 0
+Structs_privados SP1 0 0
+Algoritmos1 A101 A102 A103 A104 A105 A106 0 0 A107 A108 0 0 A109 0 0 0 0 0 A110 0 0
+Preprocesador PP01 PP02 PP03 PP04 0 0 PP05 0 0 0 0
+Pilas P01 P02 P03 0 0 P04 0 0 P05 0 0
+Colas Q01 Q02 Q03 0 0 Q04 0 0 Q05 0 0
+Listas L01 L02 L03 0 0 L04 L05 0 0 0 0
+ArbolesBinarios AB01 AB02 AB03 AB04 0 0 AB05 0 0 AB06 AB07 AB08 0 0 AB09 0 AB10 0 0 0 0
+Maps/Sets MS01 MS02 MS03 MS04 MS05 MS06 0 0 MS07 0 0 MS08 0 0 MS09 0 0 MS10 0 0 0
+Punteros1 P101 P102 P103 P104 P105 0 0 0 0 0 0
+Punteros2 P201 P202 P203 P204 0 0 P205 0 0 0 0
+AproximacionesNum AN01 AN02 0 0 AN03 AN04 0 0 AN05 0 0
+DivideAndConquer  DC01 DC02 DC03 0 0 DC04 0 0 DC05 0 0
+Grafos1 G01 G02 G03 G04 G05 0 0 G06 0 0 G07 0 0 G08 0 0 G09 G10 0 0 0
+Grafos2 G11 G12 G13 G14 G15 0 0 G16 0 0 G17 0 0 G18 0 0 G19 G20 0 0 0
+SHA256  SH01 SH02 SH03 0 0 SH04 0 0 SH05 0 0
+Algoritmos2 A201 A202 A203 A204 0 0 A205 0 0 A206 A207 0 0 A208 0 0 A209 A210 0 0 0
+ErrorHandling EH01 EH02 EH03 EH04 0 0 EH05 0 0 0 0
+
+
+4
+11 Introduccion Condicionales Bucles Secuencias Funciones Recursividad Vectores Matrices Structs Structs_privados Algoritmos1
+7 Pilas Colas Listas ArbolesBinarios Maps/Sets Punteros1 Punteros2
+4 Preprocesador Punteros1 Punteros2 ErrorHandling
+6 AproximacionesNum DivideAndConquer Grafos1 Grafos2 Algoritmos2 SHA256
+
+55
+Juan
+Luis
+Maria
+Marta
+Walt
+Amogus
+Teresa
+KunAguero
+LaPulga
+ElBicho
+Iniesta
+AxelBlaze
+MarkEvans
+DavidVilla
+Ronaldinho
+BetisLover
+Orslok
+Ibai
+Digref
+Reven
+ElColetas
+Nabascal
+PerroSanchez
+Ayuso
+JonnySins
+Nobita
+Doraemon
+AntonioRecio
+AmadorRibas
+MentalidadDoTiburao
+Ozuna
+AnuelAA
+Goku
+JordiPetit
+SalvadorRoure
+M.Khalifa
+Shrek
+BillGates
+JeffBezos
+MarkZuccenberg
+FrancescTorres
+TonyStark
+Ironman
+ErenYeager
+Levi
+Dalas
+Whatsapp2Developer
+Batman
+Robin
+Torbjorn
+ShinjiIkari
+MichaelJordan
+AmancioOrtega
+Jesus
+Obama
+
+listar_problemas
+listar_sesiones
+listar_cursos
+listar_usuarios
+
+np G21
+np G22
+np G23
+np G24
+np G25
+np PY01
+np PY02
+np PY03
+np PY04
+np PY05
+
+np I01
+np C01
+listar_problemas
+
+nc
+4 Pilas Colas Grafos1 Grafos2
+nc
+6 Algoritmos1 Algoritmos2  DivideAndConquer AproximacionesNum Introduccion Introduccion
+listar_cursos
+
+alta_usuario Guest1
+alta_usuario Guest2
+alta_usuario Guest3
+alta_usuario Guest4
+alta_usuario Guest5
+baja_usuario Teresa
+baja_usuario Luis
+baja_usuario Amogus
+baja_usuario Maria
+baja_usuario MentalidadDoTiburao
+
+alta_usuario Guest1
+baja_usuario Guest7
+baja_usuario MentalidadDoTiburao
+alta_usuario Guest2
+listar_usuarios
+
+inscribir_curso Obama 3
+inscribir_curso JordiPetit 3
+inscribir_curso Walt 3
+inscribir_curso PerroSanchez 5
+inscribir_curso Ibai 1
+inscribir_curso Digref 1
+inscribir_curso BetisLover 2
+inscribir_curso Whatsapp2Developer 1
+inscribir_curso nobita 1
+inscribir_curso Orslok 1
+inscribir_curso Jesus 5
+inscribir_curso MarkZuccenberg 3
+inscribir_curso AmancioOrtega 5
+inscribir_curso BillGates 5
+inscribir_curso ElColetas 1
+inscribir_curso ElBicho 2
+inscribir_curso LaPulga 2
+inscribir_curso AnuelAA 4
+inscribir_curso Ozuna 4
+
+inscribir_curso AnuelAA 2
+inscribir_curso Ozuna 2
+inscribir_curso Doraemon 38
+inscribir_curso Guest7 -1
+inscribir_curso Guest1 -1
+inscribir_curso MentalidadDoTiburao 2
+listar_usuarios
+listar_cursos
+
+curso_usuario Obama
+curso_usuario Trump
+curso_usuario Walt
+curso_usuario JordiPetit
+curso_usuario Ozuna
+curso_usuario PerroSanchez
+
+sesion_problema 1 I01
+sesion_problema 4 AN01
+
+sesion_problema 5 I01
+sesion_problema 90 PY01
+sesion_problema 1 NOT_PROB
+sesion_problema 943 NOT_PROB
+
+problemas_enviables SalvadorRoure
+problemas_enviables LaPulga
+problemas_enviables Walt
+problemas_enviables Obama
+
+envio Obama EH01 1
+envio Obama EH02 1
+envio Obama EH03 1
+envio Obama EH04 1
+envio Obama EH05 1
+envio Obama PP01 1
+envio Obama PP02 1
+envio Obama PP03 1
+envio Obama PP04 1
+envio Obama PP05 1
+envio Obama P101 1
+envio Obama P102 1
+envio Obama P103 1
+envio Obama P104 1
+envio Obama P105 1
+envio Obama P201 1
+envio Obama P202 1
+envio Obama P203 1
+envio Obama P204 1
+envio Obama P205 1
+
+i Obama 1
+envio Obama I01 1
+envio Obama I02 1
+envio Obama I03 1
+envio Obama I04 1
+envio Obama I05 1
+envio Obama C01 1
+envio Obama C02 1
+envio Obama C03 1
+envio Obama C04 1
+envio Obama C05 1
+envio Obama B01 1
+envio Obama B02 1
+envio Obama B03 1
+envio Obama B04 1
+envio Obama B05 1
+envio Obama B06 1
+envio Obama B07 1
+envio Obama B08 1
+envio Obama B09 1
+envio Obama B10 1
+envio Obama B11 1
+envio Obama B12 1
+envio Obama B13 1
+envio Obama B14 1
+envio Obama B15 1
+envio Obama S01 1
+envio Obama S02 1
+envio Obama S03 1
+envio Obama S04 1
+envio Obama S05 1
+envio Obama S06 1
+envio Obama S07 1
+envio Obama S08 1
+envio Obama S09 1
+envio Obama S10 1
+envio Obama S11 1
+envio Obama S12 1
+envio Obama S13 1
+envio Obama S14 1
+envio Obama S15 1
+envio Obama F01 1
+envio Obama F02 1
+envio Obama F03 1
+envio Obama F04 1
+envio Obama F05 1
+envio Obama F06 1
+envio Obama F07 1
+envio Obama F08 1
+envio Obama F09 1
+envio Obama F10 1
+envio Obama R01 1
+envio Obama R02 1
+envio Obama R03 1
+envio Obama R04 1
+envio Obama R05 1
+envio Obama R06 1
+envio Obama R07 1
+envio Obama R08 1
+envio Obama R09 1
+envio Obama R10 1
+envio Obama V01 1
+envio Obama V02 1
+envio Obama V03 1
+envio Obama V04 1
+envio Obama V05 1
+envio Obama V06 1
+envio Obama V07 1
+envio Obama V08 1
+envio Obama V09 1
+envio Obama V10 1
+envio Obama V11 1
+envio Obama V12 1
+envio Obama V13 1
+envio Obama V14 1
+envio Obama V15 1
+envio Obama M01 1
+envio Obama M02 1
+envio Obama M03 1
+envio Obama M04 1
+envio Obama M05 1
+envio Obama M06 1
+envio Obama M07 1
+envio Obama M08 1
+envio Obama M09 1
+envio Obama SP1 1
+envio Obama ST1 1
+envio Obama ST2 1
+envio Obama ST3 1
+envio Obama ST4 1
+envio Obama ST5 1
+envio Obama ST6 1
+envio Obama ST7 1
+envio Obama ST8 1
+envio Obama ST9 1
+envio Obama ST10 1
+envio Obama A101 1
+envio Obama A102 1
+envio Obama A103 1
+envio Obama A104 1
+envio Obama A105 1
+envio Obama A106 1
+envio Obama A107 1
+envio Obama A108 1
+envio Obama A109 1
+envio Obama A110 1
+
+pe Obama
+i Obama 2
+
+envio Obama P01 1
+envio Obama P02 1
+envio Obama P03 1
+envio Obama P04 1
+envio Obama P05 1
+envio Obama Q01 1
+envio Obama Q02 1
+envio Obama Q03 1
+envio Obama Q04 1
+envio Obama Q05 1
+envio Obama L01 1
+envio Obama L02 1
+envio Obama L03 1
+envio Obama L04 1
+envio Obama L05 1
+envio Obama AB01 1
+envio Obama AB02 1
+envio Obama AB03 1
+envio Obama AB04 1
+envio Obama AB05 1
+envio Obama AB06 1
+envio Obama AB07 1
+envio Obama AB08 1
+envio Obama AB09 1
+envio Obama AB10 1
+envio Obama MS01 1
+envio Obama MS02 1
+envio Obama MS03 1
+envio Obama MS04 1
+envio Obama MS05 1
+envio Obama MS06 1
+envio Obama MS07 1
+envio Obama MS08 1
+envio Obama MS09 1
+envio Obama MS10 1
+
+cu Obama
+i Obama 4
+
+envio Obama AN01 1
+envio Obama AN02 1
+envio Obama AN03 1
+envio Obama AN04 1
+envio Obama AN05 1
+envio Obama DC01 1
+envio Obama DC02 1
+envio Obama DC03 1
+envio Obama DC04 1
+envio Obama DC05 1
+envio Obama G01 1
+envio Obama G02 1
+envio Obama G03 1
+envio Obama G04 1
+envio Obama G05 1
+envio Obama G06 1
+envio Obama G07 1
+envio Obama G08 1
+envio Obama G09 1
+envio Obama G10 1
+envio Obama G11 1
+envio Obama G12 1
+envio Obama G13 1
+envio Obama G14 1
+envio Obama G15 1
+envio Obama G16 1
+envio Obama G17 1
+envio Obama G18 1
+envio Obama G19 1
+envio Obama G20 1
+envio Obama A201 1
+envio Obama A202 1
+envio Obama A203 1
+envio Obama A204 1
+envio Obama A205 1
+envio Obama A206 1
+envio Obama A207 1
+envio Obama A208 1
+envio Obama A209 1
+envio Obama A210 1
+envio Obama SH01 1
+envio Obama SH02 1
+envio Obama SH03 1
+envio Obama SH04 1
+envio Obama SH05 1
+
+pe Obama
+cu Obama
+escribir_usuario Obama
+pr Obama
+lu
+lc
+
+envio JordiPetit EH01 1
+envio JordiPetit EH02 1
+envio JordiPetit EH03 1
+envio JordiPetit EH04 1
+envio JordiPetit EH05 1
+envio JordiPetit PP01 1
+envio JordiPetit PP02 1
+envio JordiPetit PP03 1
+envio JordiPetit PP04 1
+envio JordiPetit PP05 1
+envio JordiPetit P101 1
+envio JordiPetit P102 1
+envio JordiPetit P103 1
+envio JordiPetit P104 1
+envio JordiPetit P105 1
+envio JordiPetit P201 1
+envio JordiPetit P202 1
+envio JordiPetit P203 1
+envio JordiPetit P204 1
+envio JordiPetit P205 1
+
+i JordiPetit 1
+envio JordiPetit I01 1
+envio JordiPetit I02 1
+envio JordiPetit I03 1
+envio JordiPetit I04 1
+envio JordiPetit I05 1
+envio JordiPetit C01 1
+envio JordiPetit C02 1
+envio JordiPetit C03 1
+envio JordiPetit C04 1
+envio JordiPetit C05 1
+envio JordiPetit B01 1
+envio JordiPetit B02 1
+envio JordiPetit B03 1
+envio JordiPetit B04 1
+envio JordiPetit B05 1
+envio JordiPetit B06 1
+envio JordiPetit B07 1
+envio JordiPetit B08 1
+envio JordiPetit B09 1
+envio JordiPetit B10 1
+envio JordiPetit B11 1
+envio JordiPetit B12 1
+envio JordiPetit B13 1
+envio JordiPetit B14 1
+envio JordiPetit B15 1
+envio JordiPetit S01 1
+envio JordiPetit S02 1
+envio JordiPetit S03 1
+envio JordiPetit S04 1
+envio JordiPetit S05 1
+envio JordiPetit S06 1
+envio JordiPetit S07 1
+envio JordiPetit S08 1
+envio JordiPetit S09 1
+envio JordiPetit S10 1
+envio JordiPetit S11 1
+envio JordiPetit S12 1
+envio JordiPetit S13 1
+envio JordiPetit S14 1
+envio JordiPetit S15 1
+envio JordiPetit F01 1
+envio JordiPetit F02 1
+envio JordiPetit F03 1
+envio JordiPetit F04 1
+envio JordiPetit F05 1
+envio JordiPetit F06 1
+envio JordiPetit F07 1
+envio JordiPetit F08 1
+envio JordiPetit F09 1
+envio JordiPetit F10 1
+envio JordiPetit R01 1
+envio JordiPetit R02 1
+envio JordiPetit R03 1
+envio JordiPetit R04 1
+envio JordiPetit R05 1
+envio JordiPetit R06 1
+envio JordiPetit R07 1
+envio JordiPetit R08 1
+envio JordiPetit R09 1
+envio JordiPetit R10 1
+envio JordiPetit V01 1
+envio JordiPetit V02 1
+envio JordiPetit V03 1
+envio JordiPetit V04 1
+envio JordiPetit V05 1
+envio JordiPetit V06 1
+envio JordiPetit V07 1
+envio JordiPetit V08 1
+envio JordiPetit V09 1
+envio JordiPetit V10 1
+envio JordiPetit V11 1
+envio JordiPetit V12 1
+envio JordiPetit V13 1
+envio JordiPetit V14 1
+envio JordiPetit V15 1
+envio JordiPetit M01 1
+envio JordiPetit M02 1
+envio JordiPetit M03 1
+envio JordiPetit M04 1
+envio JordiPetit M05 1
+envio JordiPetit M06 1
+envio JordiPetit M07 1
+envio JordiPetit M08 1
+envio JordiPetit M09 1
+envio JordiPetit SP1 1
+envio JordiPetit ST1 1
+envio JordiPetit ST2 1
+envio JordiPetit ST3 1
+envio JordiPetit ST4 1
+envio JordiPetit ST5 1
+envio JordiPetit ST6 1
+envio JordiPetit ST7 1
+envio JordiPetit ST8 1
+envio JordiPetit ST9 1
+envio JordiPetit ST10 1
+envio JordiPetit A101 1
+envio JordiPetit A102 1
+envio JordiPetit A103 1
+envio JordiPetit A104 1
+envio JordiPetit A105 1
+envio JordiPetit A106 1
+envio JordiPetit A107 1
+envio JordiPetit A108 1
+envio JordiPetit A109 1
+envio JordiPetit A110 1
+
+pe JordiPetit
+i JordiPetit 2
+
+envio JordiPetit P01 1
+envio JordiPetit P02 1
+envio JordiPetit P03 1
+envio JordiPetit P04 1
+envio JordiPetit P05 1
+envio JordiPetit Q01 1
+envio JordiPetit Q02 1
+envio JordiPetit Q03 1
+envio JordiPetit Q04 1
+envio JordiPetit Q05 1
+envio JordiPetit L01 1
+envio JordiPetit L02 1
+envio JordiPetit L03 1
+envio JordiPetit L04 1
+envio JordiPetit L05 1
+envio JordiPetit AB01 1
+envio JordiPetit AB02 1
+envio JordiPetit AB03 1
+envio JordiPetit AB04 1
+envio JordiPetit AB05 1
+envio JordiPetit AB06 1
+envio JordiPetit AB07 1
+envio JordiPetit AB08 1
+envio JordiPetit AB09 1
+envio JordiPetit AB10 1
+envio JordiPetit MS01 1
+envio JordiPetit MS02 1
+envio JordiPetit MS03 1
+envio JordiPetit MS04 1
+envio JordiPetit MS05 1
+envio JordiPetit MS06 1
+envio JordiPetit MS07 1
+envio JordiPetit MS08 1
+envio JordiPetit MS09 1
+envio JordiPetit MS10 1
+
+cu JordiPetit
+i JordiPetit 5
+pe JordiPetit
+escribir_usuario JordiPetit
+
+lp
+lu
+lc
+
+inscribir_curso Nabascal 1
+envio Nabascal I01 0
+envio Nabascal I01 0
+envio Nabascal I01 0
+envio Nabascal I01 0
+envio Nabascal I01 0
+envio Nabascal I01 0
+envio Nabascal I01 0
+envio Nabascal I01 0
+envio Nabascal I01 0
+envio Nabascal I01 0
+envio Nabascal I01 0
+envio Nabascal I01 0
+envio Nabascal I01 0
+envio Nabascal I01 0
+envio Nabascal I01 0
+envio Nabascal I01 0
+envio Nabascal I01 0
+envio Nabascal I01 0
+envio Nabascal I01 0
+envio Nabascal I01 0
+envio Nabascal I01 0
+envio Nabascal I01 0
+envio Nabascal I01 0
+envio Nabascal I01 0
+envio Nabascal I01 0
+envio Nabascal I01 0
+envio Nabascal I01 0
+envio Nabascal I01 0
+envio Nabascal I01 0
+envio Nabascal I01 0
+envio Nabascal I01 0
+envio Nabascal I01 0
+envio Nabascal I01 0
+envio Nabascal I01 0
+envio Nabascal I01 0
+envio Nabascal I01 0
+envio Nabascal I01 0
+envio Nabascal I01 0
+envio Nabascal I01 0
+envio Nabascal I01 0
+envio Nabascal I01 0
+envio Nabascal I01 0
+envio Nabascal I01 0
+envio Nabascal I01 0
+envio Nabascal I01 0
+envio Nabascal I01 0
+envio Nabascal I01 0
+envio Nabascal I01 0
+envio Nabascal I01 0
+envio Nabascal I01 0
+escribir_usuario Nabascal
+escribir_problema I01
+
+lc
+b Obama
+b JordiPetit
+lc
+
+
+fin

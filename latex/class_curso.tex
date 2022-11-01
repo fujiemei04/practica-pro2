@@ -1,0 +1,487 @@
+\hypertarget{class_curso}{}\doxysection{Referencia de la Clase Curso}
+\label{class_curso}\index{Curso@{Curso}}
+
+
+Representa la información y las operaciones asociadas a un curso.  
+
+
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_curso_add3bcc7fd065fa02b8fad76cedcc3a8a}{Curso}} ()
+\begin{DoxyCompactList}\small\item\em Constructora por defecto. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_curso_add86c3d82b42115b12676f9e7cfeda02}{consultar\+\_\+tam\+\_\+curso}} () const
+\begin{DoxyCompactList}\small\item\em Consulto el tamaño del curso. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_curso_ad6143f5bda86bd87c839d9945f2bc3de}{consultar\+\_\+inscritos\+\_\+actual}} () const
+\begin{DoxyCompactList}\small\item\em Consulto el numero de inscritos actualmente. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_curso_ae6bb1e9e6f1b63f95f243ca9c1f5a961}{consultar\+\_\+completados}} () const
+\begin{DoxyCompactList}\small\item\em Consulto el numero de inscritos en total. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_curso_ab3aa558bc95c80e3e5872dca1c936fc9}{consultar\+\_\+nombre\+\_\+sesion}} (int i) const
+\begin{DoxyCompactList}\small\item\em Consulto el nombre de una sesion. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_curso_a242ec71cd39b94f0a16f96f468cd8894}{hallar\+\_\+problema}} (const string \&p, string \&s) const
+\begin{DoxyCompactList}\small\item\em Consulto el nombre de una sesion al qual pertence un problema. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_curso_a3d4bf7da2435859049de9431b5a67395}{buscar\+\_\+sesion\+\_\+prob}} (const string \&p) const
+\begin{DoxyCompactList}\small\item\em Consulto el nombre de una sesion al qual pertence un problema. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_curso_a5e4090d91f113376c55384423c2ec673}{modificar\+\_\+completados}} (int c)
+\begin{DoxyCompactList}\small\item\em Modifica el numero de usuarios que han completado un curso. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_curso_aac0f2c55ad24dfcbce88999e2833121c}{nuevo\+\_\+curso\+\_\+aux}} (int n, \mbox{\hyperlink{class_cjt___sesiones}{Cjt\+\_\+\+Sesiones}} \&S, bool \&interseccion)
+\begin{DoxyCompactList}\small\item\em Se crea un nuevo curso. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_curso_a46209afb85571291662086a5c4761ce5}{modificar\+\_\+insc\+\_\+actu}} (int c)
+\begin{DoxyCompactList}\small\item\em Modifica el numero de inscritos. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_curso_acdb653832817fad42bdb2839a364f1b2}{leer\+\_\+curso}} (int n, \mbox{\hyperlink{class_cjt___sesiones}{Cjt\+\_\+\+Sesiones}} \&S)
+\begin{DoxyCompactList}\small\item\em Lectura de un curso. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_curso_a9739277e2cbddb586f9dfeaf3e8040c7}{imprimir\+\_\+curso}} () const
+\begin{DoxyCompactList}\small\item\em Escritura de un curso. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ string $>$ \mbox{\hyperlink{class_curso_aaff942379d56d7b56749167aa9de49ee}{Subset\+\_\+\+Sesion}}
+\begin{DoxyCompactList}\small\item\em Subconjunto de sesiones del curso. \end{DoxyCompactList}\item 
+map$<$ string, string $>$ \mbox{\hyperlink{class_curso_a92296397e60256e997b40022c4c9ea4c}{prob\+\_\+ses}}
+\begin{DoxyCompactList}\small\item\em Un map con el nombre de un problema como key asociado a su sesion. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_curso_a49bbd2da72309106c3941b057704c84c}{completados}}
+\begin{DoxyCompactList}\small\item\em Cuantos usuarios han completado el curso. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_curso_ae5cefc9275276b48ad9fb8b9d53a57f1}{inscritos\+\_\+actual}}
+\begin{DoxyCompactList}\small\item\em Usuarios inscritos actualmente en el curso. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Representa la información y las operaciones asociadas a un curso. 
+
+Sus operaciones son las consultoras del numero del numero de sesiones de un curso, los inscritos actuales y cuantos usuarios han completado el curso, el nombre de una ~\newline
+ sesion del curso, la existencia de un problema y la busqueda del nombre de una sesion a partir de un problema. Las modificadoras del numero de inscritos y completados, nuevo curso y la lectura y escritura de un curso 
+
+Definición en la línea 23 del archivo Curso.\+hh.
+
+
+
+\doxysubsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{class_curso_add3bcc7fd065fa02b8fad76cedcc3a8a}\label{class_curso_add3bcc7fd065fa02b8fad76cedcc3a8a}} 
+\index{Curso@{Curso}!Curso@{Curso}}
+\index{Curso@{Curso}!Curso@{Curso}}
+\doxysubsubsection{\texorpdfstring{Curso()}{Curso()}}
+{\footnotesize\ttfamily Curso\+::\+Curso (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructora por defecto. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es una \mbox{\hyperlink{class_curso}{Curso}} con atributos vacios 
+\end{DoxyPostcond}
+
+
+Definición en la línea 8 del archivo Curso.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{8              \{}
+\DoxyCodeLine{9     \mbox{\hyperlink{class_curso_a49bbd2da72309106c3941b057704c84c}{completados}} = \mbox{\hyperlink{class_curso_ae5cefc9275276b48ad9fb8b9d53a57f1}{inscritos\_actual}} = 0;}
+\DoxyCodeLine{10 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_curso_add86c3d82b42115b12676f9e7cfeda02}\label{class_curso_add86c3d82b42115b12676f9e7cfeda02}} 
+\index{Curso@{Curso}!consultar\_tam\_curso@{consultar\_tam\_curso}}
+\index{consultar\_tam\_curso@{consultar\_tam\_curso}!Curso@{Curso}}
+\doxysubsubsection{\texorpdfstring{consultar\_tam\_curso()}{consultar\_tam\_curso()}}
+{\footnotesize\ttfamily int Curso\+::consultar\+\_\+tam\+\_\+curso (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Consulto el tamaño del curso. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es el nombre de sesiones que tiene el curso del parametro implicito 
+\end{DoxyPostcond}
+
+
+Definición en la línea 12 del archivo Curso.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{12                                      \{}
+\DoxyCodeLine{13     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_curso_aaff942379d56d7b56749167aa9de49ee}{Subset\_Sesion}}.size();}
+\DoxyCodeLine{14 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_curso_ad6143f5bda86bd87c839d9945f2bc3de}\label{class_curso_ad6143f5bda86bd87c839d9945f2bc3de}} 
+\index{Curso@{Curso}!consultar\_inscritos\_actual@{consultar\_inscritos\_actual}}
+\index{consultar\_inscritos\_actual@{consultar\_inscritos\_actual}!Curso@{Curso}}
+\doxysubsubsection{\texorpdfstring{consultar\_inscritos\_actual()}{consultar\_inscritos\_actual()}}
+{\footnotesize\ttfamily int Curso\+::consultar\+\_\+inscritos\+\_\+actual (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Consulto el numero de inscritos actualmente. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es el atributo inscritos\+\_\+actual del parametro implicito 
+\end{DoxyPostcond}
+
+
+Definición en la línea 16 del archivo Curso.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{16                                             \{}
+\DoxyCodeLine{17     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_curso_ae5cefc9275276b48ad9fb8b9d53a57f1}{inscritos\_actual}};}
+\DoxyCodeLine{18 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_curso_ae6bb1e9e6f1b63f95f243ca9c1f5a961}\label{class_curso_ae6bb1e9e6f1b63f95f243ca9c1f5a961}} 
+\index{Curso@{Curso}!consultar\_completados@{consultar\_completados}}
+\index{consultar\_completados@{consultar\_completados}!Curso@{Curso}}
+\doxysubsubsection{\texorpdfstring{consultar\_completados()}{consultar\_completados()}}
+{\footnotesize\ttfamily int Curso\+::consultar\+\_\+completados (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Consulto el numero de inscritos en total. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es el atributo inscritos\+\_\+total del parametro implicito 
+\end{DoxyPostcond}
+
+
+Definición en la línea 20 del archivo Curso.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{20                                        \{}
+\DoxyCodeLine{21     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_curso_a49bbd2da72309106c3941b057704c84c}{completados}};}
+\DoxyCodeLine{22 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_curso_ab3aa558bc95c80e3e5872dca1c936fc9}\label{class_curso_ab3aa558bc95c80e3e5872dca1c936fc9}} 
+\index{Curso@{Curso}!consultar\_nombre\_sesion@{consultar\_nombre\_sesion}}
+\index{consultar\_nombre\_sesion@{consultar\_nombre\_sesion}!Curso@{Curso}}
+\doxysubsubsection{\texorpdfstring{consultar\_nombre\_sesion()}{consultar\_nombre\_sesion()}}
+{\footnotesize\ttfamily string Curso\+::consultar\+\_\+nombre\+\_\+sesion (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption}) const}
+
+
+
+Consulto el nombre de una sesion. 
+
+\begin{DoxyPrecond}{Precondición}
+i $>$= 0 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Devuelve el nombre de la sesion que se buscaba en el parametro implicito 
+\end{DoxyPostcond}
+
+
+Definición en la línea 24 del archivo Curso.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{24                                                  \{}
+\DoxyCodeLine{25     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_curso_aaff942379d56d7b56749167aa9de49ee}{Subset\_Sesion}}[i];}
+\DoxyCodeLine{26 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_curso_a242ec71cd39b94f0a16f96f468cd8894}\label{class_curso_a242ec71cd39b94f0a16f96f468cd8894}} 
+\index{Curso@{Curso}!hallar\_problema@{hallar\_problema}}
+\index{hallar\_problema@{hallar\_problema}!Curso@{Curso}}
+\doxysubsubsection{\texorpdfstring{hallar\_problema()}{hallar\_problema()}}
+{\footnotesize\ttfamily bool Curso\+::hallar\+\_\+problema (\begin{DoxyParamCaption}\item[{const string \&}]{p,  }\item[{string \&}]{s }\end{DoxyParamCaption}) const}
+
+
+
+Consulto el nombre de una sesion al qual pertence un problema. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Si el problema existe en el parametro implicigo devuelve true y el parametro s pasa a ser el de la sesion al cual pertence el problema, falso contrariamente 
+\end{DoxyPostcond}
+
+
+Definición en la línea 28 del archivo Curso.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{28                                                           \{}
+\DoxyCodeLine{29     map<string,string>::const\_iterator it = \mbox{\hyperlink{class_curso_a92296397e60256e997b40022c4c9ea4c}{prob\_ses}}.find(p);}
+\DoxyCodeLine{30     \textcolor{keywordflow}{if} (it != \mbox{\hyperlink{class_curso_a92296397e60256e997b40022c4c9ea4c}{prob\_ses}}.end()) \{}
+\DoxyCodeLine{31         s = it-\/>second;}
+\DoxyCodeLine{32         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{33     \}}
+\DoxyCodeLine{34     \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{35 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_curso_a3d4bf7da2435859049de9431b5a67395}\label{class_curso_a3d4bf7da2435859049de9431b5a67395}} 
+\index{Curso@{Curso}!buscar\_sesion\_prob@{buscar\_sesion\_prob}}
+\index{buscar\_sesion\_prob@{buscar\_sesion\_prob}!Curso@{Curso}}
+\doxysubsubsection{\texorpdfstring{buscar\_sesion\_prob()}{buscar\_sesion\_prob()}}
+{\footnotesize\ttfamily string Curso\+::buscar\+\_\+sesion\+\_\+prob (\begin{DoxyParamCaption}\item[{const string \&}]{p }\end{DoxyParamCaption}) const}
+
+
+
+Consulto el nombre de una sesion al qual pertence un problema. 
+
+\begin{DoxyPrecond}{Precondición}
+El problema existe 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Devuelve el nombre de la sesion al qual pertenecia el problema p del parametro implicito 
+\end{DoxyPostcond}
+
+
+Definición en la línea 37 del archivo Curso.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{37                                                       \{}
+\DoxyCodeLine{38     map<string,string>::const\_iterator it = \mbox{\hyperlink{class_curso_a92296397e60256e997b40022c4c9ea4c}{prob\_ses}}.find(p);}
+\DoxyCodeLine{39     \textcolor{keywordflow}{return} it-\/>second;}
+\DoxyCodeLine{40 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_curso_a5e4090d91f113376c55384423c2ec673}\label{class_curso_a5e4090d91f113376c55384423c2ec673}} 
+\index{Curso@{Curso}!modificar\_completados@{modificar\_completados}}
+\index{modificar\_completados@{modificar\_completados}!Curso@{Curso}}
+\doxysubsubsection{\texorpdfstring{modificar\_completados()}{modificar\_completados()}}
+{\footnotesize\ttfamily void Curso\+::modificar\+\_\+completados (\begin{DoxyParamCaption}\item[{int}]{c }\end{DoxyParamCaption})}
+
+
+
+Modifica el numero de usuarios que han completado un curso. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El parametro implicito completados pasa a ser c 
+\end{DoxyPostcond}
+
+
+Definición en la línea 42 del archivo Curso.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{42                                        \{}
+\DoxyCodeLine{43     \mbox{\hyperlink{class_curso_a49bbd2da72309106c3941b057704c84c}{completados}} = c;}
+\DoxyCodeLine{44 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_curso_aac0f2c55ad24dfcbce88999e2833121c}\label{class_curso_aac0f2c55ad24dfcbce88999e2833121c}} 
+\index{Curso@{Curso}!nuevo\_curso\_aux@{nuevo\_curso\_aux}}
+\index{nuevo\_curso\_aux@{nuevo\_curso\_aux}!Curso@{Curso}}
+\doxysubsubsection{\texorpdfstring{nuevo\_curso\_aux()}{nuevo\_curso\_aux()}}
+{\footnotesize\ttfamily void Curso\+::nuevo\+\_\+curso\+\_\+aux (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{\mbox{\hyperlink{class_cjt___sesiones}{Cjt\+\_\+\+Sesiones}} \&}]{S,  }\item[{bool \&}]{interseccion }\end{DoxyParamCaption})}
+
+
+
+Se crea un nuevo curso. 
+
+\begin{DoxyPrecond}{Precondición}
+n $>$ 0 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Un nuevo curso es creado y en caso de que no haya interseccion de problemas, todos los problemas y sus sesiones son añadidos al parametro implicito e interseccion es falso, contrariamente interseccion es falso 
+\end{DoxyPostcond}
+
+
+Definición en la línea 46 del archivo Curso.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{46                                                                     \{}
+\DoxyCodeLine{47    interseccion = \textcolor{keyword}{false};}
+\DoxyCodeLine{48     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0;i < n;++i) \{}
+\DoxyCodeLine{49         \textcolor{keywordtype}{string} s;}
+\DoxyCodeLine{50         cin >> s;}
+\DoxyCodeLine{51         \textcolor{keywordtype}{int} l = S.\mbox{\hyperlink{class_cjt___sesiones_a3ba95e72436fbdc0945bb62569258cbc}{consultar\_tam\_ses}}(s);}
+\DoxyCodeLine{52         \textcolor{keywordtype}{int} j = 0;}
+\DoxyCodeLine{53         \mbox{\hyperlink{class_curso_aaff942379d56d7b56749167aa9de49ee}{Subset\_Sesion}}.push\_back(s);}
+\DoxyCodeLine{54         \textcolor{keywordflow}{while} (j < l and not interseccion) \{}
+\DoxyCodeLine{55             pair<map<string,string>::iterator,\textcolor{keywordtype}{bool}> p;}
+\DoxyCodeLine{56             p = \mbox{\hyperlink{class_curso_a92296397e60256e997b40022c4c9ea4c}{prob\_ses}}.insert(make\_pair(S.\mbox{\hyperlink{class_cjt___sesiones_aba3bcc2f1c23a7d1b70970d9037118e3}{consultar\_problema}}(j,s),s));}
+\DoxyCodeLine{57             \textcolor{keywordflow}{if} (not p.second) interseccion = \textcolor{keyword}{true};}
+\DoxyCodeLine{58             ++j;}
+\DoxyCodeLine{59         \}}
+\DoxyCodeLine{60     \}}
+\DoxyCodeLine{61 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_curso_a46209afb85571291662086a5c4761ce5}\label{class_curso_a46209afb85571291662086a5c4761ce5}} 
+\index{Curso@{Curso}!modificar\_insc\_actu@{modificar\_insc\_actu}}
+\index{modificar\_insc\_actu@{modificar\_insc\_actu}!Curso@{Curso}}
+\doxysubsubsection{\texorpdfstring{modificar\_insc\_actu()}{modificar\_insc\_actu()}}
+{\footnotesize\ttfamily void Curso\+::modificar\+\_\+insc\+\_\+actu (\begin{DoxyParamCaption}\item[{int}]{c }\end{DoxyParamCaption})}
+
+
+
+Modifica el numero de inscritos. 
+
+\begin{DoxyPrecond}{Precondición}
+c $>$= 0 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El numero de inscritos del parametro implicito pasa a ser el entero c 
+\end{DoxyPostcond}
+
+
+Definición en la línea 63 del archivo Curso.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{63                                      \{}
+\DoxyCodeLine{64     \mbox{\hyperlink{class_curso_ae5cefc9275276b48ad9fb8b9d53a57f1}{inscritos\_actual}} = c;}
+\DoxyCodeLine{65 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_curso_acdb653832817fad42bdb2839a364f1b2}\label{class_curso_acdb653832817fad42bdb2839a364f1b2}} 
+\index{Curso@{Curso}!leer\_curso@{leer\_curso}}
+\index{leer\_curso@{leer\_curso}!Curso@{Curso}}
+\doxysubsubsection{\texorpdfstring{leer\_curso()}{leer\_curso()}}
+{\footnotesize\ttfamily void Curso\+::leer\+\_\+curso (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{\mbox{\hyperlink{class_cjt___sesiones}{Cjt\+\_\+\+Sesiones}} \&}]{S }\end{DoxyParamCaption})}
+
+
+
+Lectura de un curso. 
+
+\begin{DoxyPrecond}{Precondición}
+n $>$ 0 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El parámetro implícito pasa a tener los atributos leídos del canal estándar de entrada 
+\end{DoxyPostcond}
+
+
+Definición en la línea 67 del archivo Curso.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{67                                             \{}
+\DoxyCodeLine{68     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0;i < n;++i) \{}
+\DoxyCodeLine{69         \textcolor{keywordtype}{string} s;}
+\DoxyCodeLine{70         cin >> s; }
+\DoxyCodeLine{71         \mbox{\hyperlink{class_curso_aaff942379d56d7b56749167aa9de49ee}{Subset\_Sesion}}.push\_back(s);}
+\DoxyCodeLine{72         \textcolor{keywordtype}{int} n = S.\mbox{\hyperlink{class_cjt___sesiones_a3ba95e72436fbdc0945bb62569258cbc}{consultar\_tam\_ses}}(s);}
+\DoxyCodeLine{73         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0;j < n;++j) \{}
+\DoxyCodeLine{74             \mbox{\hyperlink{class_curso_a92296397e60256e997b40022c4c9ea4c}{prob\_ses}}.insert(make\_pair(S.\mbox{\hyperlink{class_cjt___sesiones_aba3bcc2f1c23a7d1b70970d9037118e3}{consultar\_problema}}(j,s),s));}
+\DoxyCodeLine{75         \}}
+\DoxyCodeLine{76     \}}
+\DoxyCodeLine{77 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_curso_a9739277e2cbddb586f9dfeaf3e8040c7}\label{class_curso_a9739277e2cbddb586f9dfeaf3e8040c7}} 
+\index{Curso@{Curso}!imprimir\_curso@{imprimir\_curso}}
+\index{imprimir\_curso@{imprimir\_curso}!Curso@{Curso}}
+\doxysubsubsection{\texorpdfstring{imprimir\_curso()}{imprimir\_curso()}}
+{\footnotesize\ttfamily void Curso\+::imprimir\+\_\+curso (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Escritura de un curso. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se ha escrito en el canal estándar de salida los atributos del parámetro implícito 
+\end{DoxyPostcond}
+
+
+Definición en la línea 79 del archivo Curso.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{79                                  \{}
+\DoxyCodeLine{80     \textcolor{keywordtype}{int} n = \mbox{\hyperlink{class_curso_aaff942379d56d7b56749167aa9de49ee}{Subset\_Sesion}}.size();}
+\DoxyCodeLine{81     cout  << \mbox{\hyperlink{class_curso_a49bbd2da72309106c3941b057704c84c}{completados}} << \textcolor{stringliteral}{"{} "{}} << \mbox{\hyperlink{class_curso_ae5cefc9275276b48ad9fb8b9d53a57f1}{inscritos\_actual}} << \textcolor{stringliteral}{"{} "{}};}
+\DoxyCodeLine{82     cout << n << \textcolor{stringliteral}{"{} "{}};}
+\DoxyCodeLine{83     cout << \textcolor{stringliteral}{"{}("{}};}
+\DoxyCodeLine{84     \textcolor{keywordtype}{bool} parar = \textcolor{keyword}{false};}
+\DoxyCodeLine{85     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0;i < n;++i) \{}
+\DoxyCodeLine{86         \textcolor{keywordflow}{if} (parar) cout << \textcolor{stringliteral}{"{} "{}};}
+\DoxyCodeLine{87         \textcolor{keywordflow}{else} parar = \textcolor{keyword}{true};}
+\DoxyCodeLine{88         cout << \mbox{\hyperlink{class_curso_aaff942379d56d7b56749167aa9de49ee}{Subset\_Sesion}}[i];}
+\DoxyCodeLine{89     \}}
+\DoxyCodeLine{90     cout << \textcolor{stringliteral}{"{})"{}} << endl;}
+\DoxyCodeLine{91 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{class_curso_aaff942379d56d7b56749167aa9de49ee}\label{class_curso_aaff942379d56d7b56749167aa9de49ee}} 
+\index{Curso@{Curso}!Subset\_Sesion@{Subset\_Sesion}}
+\index{Subset\_Sesion@{Subset\_Sesion}!Curso@{Curso}}
+\doxysubsubsection{\texorpdfstring{Subset\_Sesion}{Subset\_Sesion}}
+{\footnotesize\ttfamily vector$<$string$>$ Curso\+::\+Subset\+\_\+\+Sesion\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Subconjunto de sesiones del curso. 
+
+
+
+Definición en la línea 28 del archivo Curso.\+hh.
+
+\mbox{\Hypertarget{class_curso_a92296397e60256e997b40022c4c9ea4c}\label{class_curso_a92296397e60256e997b40022c4c9ea4c}} 
+\index{Curso@{Curso}!prob\_ses@{prob\_ses}}
+\index{prob\_ses@{prob\_ses}!Curso@{Curso}}
+\doxysubsubsection{\texorpdfstring{prob\_ses}{prob\_ses}}
+{\footnotesize\ttfamily map$<$string,string$>$ Curso\+::prob\+\_\+ses\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Un map con el nombre de un problema como key asociado a su sesion. 
+
+
+
+Definición en la línea 31 del archivo Curso.\+hh.
+
+\mbox{\Hypertarget{class_curso_a49bbd2da72309106c3941b057704c84c}\label{class_curso_a49bbd2da72309106c3941b057704c84c}} 
+\index{Curso@{Curso}!completados@{completados}}
+\index{completados@{completados}!Curso@{Curso}}
+\doxysubsubsection{\texorpdfstring{completados}{completados}}
+{\footnotesize\ttfamily int Curso\+::completados\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Cuantos usuarios han completado el curso. 
+
+
+
+Definición en la línea 34 del archivo Curso.\+hh.
+
+\mbox{\Hypertarget{class_curso_ae5cefc9275276b48ad9fb8b9d53a57f1}\label{class_curso_ae5cefc9275276b48ad9fb8b9d53a57f1}} 
+\index{Curso@{Curso}!inscritos\_actual@{inscritos\_actual}}
+\index{inscritos\_actual@{inscritos\_actual}!Curso@{Curso}}
+\doxysubsubsection{\texorpdfstring{inscritos\_actual}{inscritos\_actual}}
+{\footnotesize\ttfamily int Curso\+::inscritos\+\_\+actual\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Usuarios inscritos actualmente en el curso. 
+
+
+
+Definición en la línea 37 del archivo Curso.\+hh.
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_curso_8hh}{Curso.\+hh}}\item 
+\mbox{\hyperlink{_curso_8cc}{Curso.\+cc}}\end{DoxyCompactItemize}

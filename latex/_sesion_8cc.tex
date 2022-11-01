@@ -1,0 +1,73 @@
+\hypertarget{_sesion_8cc}{}\doxysection{Referencia del Archivo Sesion.\+cc}
+\label{_sesion_8cc}\index{Sesion.cc@{Sesion.cc}}
+
+
+Código de la clase \mbox{\hyperlink{class_sesion}{Sesion}}.  
+
+
+Dependencia gráfica adjunta para Sesion.\+cc\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=167pt]{_sesion_8cc__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+Bin\+Tree$<$ string $>$ \mbox{\hyperlink{_sesion_8cc_abdde9b55faf52ebfcb0ce4aaa6962149}{trobar\+\_\+arbre\+\_\+imm}} (const string \&s, const Bin\+Tree$<$ string $>$ \&t)
+\item 
+void \mbox{\hyperlink{_sesion_8cc_a00be633b643789d738f27fb18a148102}{imprimir\+\_\+preorden}} (const Bin\+Tree$<$ string $>$ \&problemas)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Código de la clase \mbox{\hyperlink{class_sesion}{Sesion}}. 
+
+
+
+\doxysubsection{Documentación de las funciones}
+\mbox{\Hypertarget{_sesion_8cc_abdde9b55faf52ebfcb0ce4aaa6962149}\label{_sesion_8cc_abdde9b55faf52ebfcb0ce4aaa6962149}} 
+\index{Sesion.cc@{Sesion.cc}!trobar\_arbre\_imm@{trobar\_arbre\_imm}}
+\index{trobar\_arbre\_imm@{trobar\_arbre\_imm}!Sesion.cc@{Sesion.cc}}
+\doxysubsubsection{\texorpdfstring{trobar\_arbre\_imm()}{trobar\_arbre\_imm()}}
+{\footnotesize\ttfamily Bin\+Tree$<$string$>$ trobar\+\_\+arbre\+\_\+imm (\begin{DoxyParamCaption}\item[{const string \&}]{s,  }\item[{const Bin\+Tree$<$ string $>$ \&}]{t }\end{DoxyParamCaption})}
+
+
+
+Definición en la línea 37 del archivo Sesion.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{37                                                                            \{}
+\DoxyCodeLine{38     \textcolor{keywordflow}{if} (t.empty()) \textcolor{keywordflow}{return} BinTree<string>();}
+\DoxyCodeLine{39     \textcolor{keywordflow}{if} (t.value() == s) \textcolor{keywordflow}{return} t;}
+\DoxyCodeLine{40     BinTree<string> taux = \mbox{\hyperlink{_sesion_8cc_abdde9b55faf52ebfcb0ce4aaa6962149}{trobar\_arbre\_imm}}(s,t.left());}
+\DoxyCodeLine{41     \textcolor{keywordflow}{if} (not taux.empty()) \textcolor{keywordflow}{return} taux;}
+\DoxyCodeLine{42     \textcolor{keywordflow}{return} \mbox{\hyperlink{_sesion_8cc_abdde9b55faf52ebfcb0ce4aaa6962149}{trobar\_arbre\_imm}}(s,t.right());}
+\DoxyCodeLine{43 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{_sesion_8cc_a00be633b643789d738f27fb18a148102}\label{_sesion_8cc_a00be633b643789d738f27fb18a148102}} 
+\index{Sesion.cc@{Sesion.cc}!imprimir\_preorden@{imprimir\_preorden}}
+\index{imprimir\_preorden@{imprimir\_preorden}!Sesion.cc@{Sesion.cc}}
+\doxysubsubsection{\texorpdfstring{imprimir\_preorden()}{imprimir\_preorden()}}
+{\footnotesize\ttfamily void imprimir\+\_\+preorden (\begin{DoxyParamCaption}\item[{const Bin\+Tree$<$ string $>$ \&}]{problemas }\end{DoxyParamCaption})}
+
+
+
+Definición en la línea 70 del archivo Sesion.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{70                                                          \{}
+\DoxyCodeLine{71     \textcolor{keywordflow}{if} (not problemas.empty()) \{}
+\DoxyCodeLine{72        cout << \textcolor{stringliteral}{"{}("{}};}
+\DoxyCodeLine{73        \mbox{\hyperlink{_sesion_8cc_a00be633b643789d738f27fb18a148102}{imprimir\_preorden}}(problemas.left());}
+\DoxyCodeLine{74        \mbox{\hyperlink{_sesion_8cc_a00be633b643789d738f27fb18a148102}{imprimir\_preorden}}(problemas.right());}
+\DoxyCodeLine{75        cout << problemas.value();}
+\DoxyCodeLine{76        cout << \textcolor{stringliteral}{"{})"{}};}
+\DoxyCodeLine{77     \} }
+\DoxyCodeLine{78 \}}
+
+\end{DoxyCode}
